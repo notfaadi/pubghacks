@@ -18,7 +18,7 @@ export function HeroSearch({
   value,
   onChange,
   submitTo = 'forums',
-  placeholder = 'Search DayZ Cheats…',
+  placeholder = 'Search PUBG Hacks…',
   autoFocus = false,
   className = '',
 }: HeroSearchProps) {
@@ -42,12 +42,12 @@ export function HeroSearch({
     const term = q.trim().toLowerCase()
     if (!term) return []
     const cheatAliases = [
-      'dayz cheats',
-      'dayz cheat',
-      'dayz hacks',
-      'dayz hack',
-      'dayz standalone cheats',
-      'dayzhacks',
+      'pubg hacks',
+      'pubg hack',
+      'pubg hacks',
+      'pubg hack',
+      'pubg pc hacks',
+      'pubghacks',
       'cheats',
     ]
     if (cheatAliases.some((a) => a.includes(term) || term.includes(a))) {

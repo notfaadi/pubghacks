@@ -151,6 +151,32 @@
 /blog/:slug     /forums/:slug  301
 /forums/:slug/  /forums/:slug  301
 
+# PUBG SEO keyword URLs → product, home, or guides
+/pubg-cheats              /pubg-hacks   301
+/pubg-cheats/             /pubg-hacks   301
+/pubg-hack                /pubg-hacks   301
+/pubg-hack/               /pubg-hacks   301
+/pubg-aimbot              /forums/aimbot-settings   301
+/pubg-aimbot/             /forums/aimbot-settings   301
+/pubg-esp                 /forums/esp-wallhack-guide   301
+/pubg-esp/                /forums/esp-wallhack-guide   301
+/pubg-wallhack            /forums/esp-wallhack-guide   301
+/pubg-wallhack/           /forums/esp-wallhack-guide   301
+/pubg-radar-hack          /forums/radar-hack-guide   301
+/pubg-radar-hack/         /forums/radar-hack-guide   301
+/pubg-mod-menu            /forums/features-list   301
+/pubg-mod-menu/           /forums/features-list   301
+/undetected-pubg-hacks    /forums/undetected-pubg-hacks-2026   301
+/undetected-pubg-hacks/   /forums/undetected-pubg-hacks-2026   301
+/pubg-mobile-hacks        /forums/pubg-mobile-hacks-keywords   301
+/pubg-mobile-hacks/       /forums/pubg-mobile-hacks-keywords   301
+/battlegrounds-hacks      /pubg-hacks   301
+/battlegrounds-hacks/     /pubg-hacks   301
+/pubg-hacks-download      /pubg-hacks   301
+/pubg-hacks-download/     /pubg-hacks   301
+/free-pubg-aimbot         /faq   301
+/free-pubg-aimbot/        /faq   301
+
 # Legacy / alternate sitemap URLs → single canonical sitemap
 /sitemap-pages.xml     /sitemap.xml  301
 /sitemap-products.xml  /sitemap.xml  301

@@ -1,11 +1,11 @@
-import { DAYZ_HERO, DAYZ_SOLDIER, DAYZ_COVER, DAYZ_MENU, DAYZ_ESP } from './media'
-import { DAYZ_OG, getOgImageForPath, PAGE_OG } from './og'
+import { PUBG_HERO, PUBG_SOLDIER, PUBG_COVER, PUBG_MENU, PUBG_ESP } from './media'
+import { PUBG_OG, getOgImageForPath, PAGE_OG } from './og'
 
-export { DAYZ_OG, getOgImageForPath, PAGE_OG }
+export { PUBG_OG, getOgImageForPath, PAGE_OG }
 export { forumOgImage } from './og'
 
-export const DAYZ_PRODUCT_HERO = DAYZ_HERO
-export const DAYZ_PRODUCT_COVER = DAYZ_COVER
+export const PUBG_PRODUCT_HERO = PUBG_HERO
+export const PUBG_PRODUCT_COVER = PUBG_COVER
 
 export type ImageSeoFields = {
   alt: string
@@ -21,13 +21,13 @@ export const IMAGE_SEO: Record<
     heroCaption: string
   }
 > = {
-  dayz: {
-    alt: 'DayZ cheats product artwork for DayZ Standalone on PC',
-    title: 'DayZ Cheats Product Details',
-    caption: 'DayZ Aimbot, ESP, wallhack, loot ESP, radar hack and BattlEye compatibility',
-    heroAlt: 'DayZ cheats silent aim Aimbot and ESP features',
-    heroTitle: 'DayZ Cheats Features',
-    heroCaption: 'Review DayZ Aimbot, ESP, radar hack and current BattlEye status',
+  pubg: {
+    alt: 'PUBG hacks product artwork for PUBG PC on PC',
+    title: 'PUBG Hacks Product Details',
+    caption: 'PUBG Aimbot, ESP, wallhack, loot ESP, radar hack and BattlEye compatibility',
+    heroAlt: 'PUBG hacks silent aim Aimbot and ESP features',
+    heroTitle: 'PUBG Hacks Features',
+    heroCaption: 'Review PUBG Aimbot, ESP, radar hack and current BattlEye status',
   },
 }
 
@@ -39,55 +39,55 @@ export const PAGE_IMAGES: Record<
   PageImage
 > = {
   home: {
-    src: DAYZ_SOLDIER,
+    src: PUBG_SOLDIER,
     og: PAGE_OG.home,
-    alt: 'DayZ cheats Aimbot and ESP artwork for DayZ Standalone on PC',
-    title: 'DayZ Cheats',
-    caption: 'DayZ Aimbot, ESP, wallhack and radar hack overview.',
+    alt: 'PUBG hacks Aimbot and ESP artwork for PUBG PC on PC',
+    title: 'PUBG Hacks',
+    caption: 'PUBG Aimbot, ESP, wallhack and radar hack overview.',
   },
   forums: {
-    src: DAYZ_HERO,
+    src: PUBG_HERO,
     og: PAGE_OG.forums,
-    alt: 'DayZ cheats product artwork',
-    title: 'DayZ Cheats Guides',
-    caption: 'Setup, Aimbot and ESP guides for DayZ.',
+    alt: 'PUBG hacks product artwork',
+    title: 'PUBG Hacks Guides',
+    caption: 'Setup, Aimbot and ESP guides for PUBG.',
   },
   reviews: {
-    src: DAYZ_ESP,
+    src: PUBG_ESP,
     og: PAGE_OG.reviews,
-    alt: 'DayZ cheats review artwork',
-    title: 'DayZ Cheats Reviews',
-    caption: 'Feature and compatibility feedback for DayZ Standalone.',
+    alt: 'PUBG hacks review artwork',
+    title: 'PUBG Hacks Reviews',
+    caption: 'Feature and compatibility feedback for PUBG PC.',
   },
   faq: {
-    src: DAYZ_MENU,
+    src: PUBG_MENU,
     og: PAGE_OG.faq,
-    alt: 'DayZ cheats FAQ artwork',
-    title: 'DayZ Cheats FAQ',
-    caption: 'Compatibility, feature and setup answers for DayZ.',
+    alt: 'PUBG hacks FAQ artwork',
+    title: 'PUBG Hacks FAQ',
+    caption: 'Compatibility, feature and setup answers for PUBG.',
   },
   support: {
-    src: DAYZ_HERO,
+    src: PUBG_HERO,
     og: PAGE_OG.support,
-    alt: 'DayZ cheats support artwork',
-    title: 'DayZ Cheats Support',
-    caption: 'Delivery, loader and setup support for DayZ cheats.',
+    alt: 'PUBG hacks support artwork',
+    title: 'PUBG Hacks Support',
+    caption: 'Delivery, loader and setup support for PUBG hacks.',
   },
   product: {
-    src: DAYZ_COVER,
+    src: PUBG_COVER,
     og: PAGE_OG.product,
-    alt: 'DayZ Aimbot ESP and radar hack product artwork',
-    title: 'DayZ Cheats Features',
-    caption: 'Product details for DayZ Aimbot and ESP.',
+    alt: 'PUBG Aimbot ESP and radar hack product artwork',
+    title: 'PUBG Hacks Features',
+    caption: 'Product details for PUBG Aimbot and ESP.',
   },
 }
 
 export function getGameImage(_slug: string): string {
-  return DAYZ_PRODUCT_COVER
+  return PUBG_PRODUCT_COVER
 }
 
 export function getProductHeroImage(_slug: string): string {
-  return DAYZ_PRODUCT_COVER
+  return PUBG_PRODUCT_COVER
 }
 
 export function getOgImage(path?: string): string {

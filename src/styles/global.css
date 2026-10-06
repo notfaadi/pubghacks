@@ -116,7 +116,7 @@ body {
   background: #08060f;
 }
 
-/* Hide third-party watermarks on embedded DayZ preview videos */
+/* Hide third-party watermarks on embedded PUBG preview videos */
 .video-brand-mask {
   position: relative;
   overflow: hidden;
@@ -317,4 +317,226 @@ a:hover .game-cover-img:not(.game-cover-img--color) {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   box-shadow: none;
+}
+
+/* ——— Homepage hero banner (static — no video) ——— */
+.hero-banner--static {
+  background: var(--bg);
+}
+
+.hero-banner-backdrop {
+  background:
+    radial-gradient(ellipse 100% 80% at 50% -20%, rgba(176, 64, 251, 0.28), transparent 55%),
+    radial-gradient(ellipse 60% 50% at 100% 50%, rgba(124, 58, 237, 0.15), transparent 50%),
+    linear-gradient(165deg, #0c0818 0%, #08060f 45%, #06050c 100%);
+}
+
+.hero-banner--plain .hero-banner-backdrop {
+  background:
+    radial-gradient(ellipse 90% 60% at 50% 0%, rgba(176, 64, 251, 0.12), transparent 60%),
+    linear-gradient(180deg, #0a0812 0%, #08060f 100%);
+}
+
+.hero-art-stack {
+  min-height: 14rem;
+}
+
+.hero-art-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(176, 64, 251, 0.35), transparent 70%);
+  filter: blur(32px);
+  opacity: 0.7;
+}
+
+.hero-art-primary img {
+  filter: saturate(1.05) contrast(1.04);
+}
+
+.hero-art-secondary {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+.hero-banner .hero-video-bg {
+  animation: hero-ken-burns 28s ease-in-out infinite alternate;
+  filter: saturate(1.05) contrast(1.08) brightness(0.82);
+}
+
+.hero-banner-aurora {
+  background:
+    radial-gradient(ellipse 55% 45% at 15% 20%, rgba(176, 64, 251, 0.35), transparent 60%),
+    radial-gradient(ellipse 45% 40% at 85% 15%, rgba(56, 189, 248, 0.12), transparent 55%),
+    radial-gradient(ellipse 50% 35% at 70% 75%, rgba(124, 58, 237, 0.22), transparent 60%);
+  animation: hero-aurora-shift 18s ease-in-out infinite alternate;
+  opacity: 0.85;
+}
+
+.hero-banner-grid {
+  background-image:
+    linear-gradient(rgba(167, 139, 250, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(167, 139, 250, 0.07) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 85% 70% at 50% 35%, black 20%, transparent 75%);
+  opacity: 0.45;
+}
+
+.hero-banner-vignette {
+  background: radial-gradient(ellipse 90% 80% at 50% 45%, transparent 35%, rgba(8, 6, 15, 0.75) 100%);
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(40px);
+  animation: hero-orb-float 14s ease-in-out infinite;
+}
+
+.hero-orb--1 {
+  top: 12%;
+  left: 8%;
+  width: 12rem;
+  height: 12rem;
+  background: rgba(176, 64, 251, 0.35);
+}
+
+.hero-orb--2 {
+  top: 55%;
+  right: 10%;
+  width: 16rem;
+  height: 16rem;
+  background: rgba(124, 58, 237, 0.28);
+  animation-delay: -4s;
+}
+
+.hero-orb--3 {
+  bottom: 8%;
+  left: 35%;
+  width: 10rem;
+  height: 10rem;
+  background: rgba(192, 132, 252, 0.2);
+  animation-delay: -8s;
+}
+
+.hero-gradient-text {
+  background: linear-gradient(120deg, #f5f3ff 0%, #e9d5ff 35%, #c084fc 65%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-live-dot {
+  animation: hero-live-pulse 1.8s ease-in-out infinite;
+  box-shadow: 0 0 12px rgba(52, 211, 153, 0.65);
+}
+
+.hero-showcase-glow {
+  background: linear-gradient(135deg, rgba(176, 64, 251, 0.45), rgba(124, 58, 237, 0.15));
+  filter: blur(28px);
+  animation: hero-glow-pulse 5s ease-in-out infinite alternate;
+}
+
+.hero-showcase-frame {
+  animation: hero-frame-float 8s ease-in-out infinite;
+}
+
+.hero-cta-primary {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+    0 12px 40px rgba(176, 64, 251, 0.35);
+}
+
+.hero-stat-chip {
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-stat-chip:hover {
+  border-color: rgba(167, 139, 250, 0.35);
+  transform: translateY(-2px);
+}
+
+@keyframes hero-ken-burns {
+  0% {
+    transform: scale(1.04) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: scale(1.1) translate3d(-1.5%, -1%, 0);
+  }
+}
+
+@keyframes hero-aurora-shift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translate3d(2%, -2%, 0) scale(1.05);
+    opacity: 0.95;
+  }
+}
+
+@keyframes hero-orb-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0);
+  }
+}
+
+@keyframes hero-live-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale(0.85);
+  }
+}
+
+@keyframes hero-glow-pulse {
+  0% {
+    opacity: 0.55;
+  }
+  100% {
+    opacity: 0.95;
+  }
+}
+
+@keyframes hero-frame-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -6px, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-banner .hero-video-bg,
+  .hero-banner-aurora,
+  .hero-orb,
+  .hero-showcase-glow,
+  .hero-showcase-frame,
+  .hero-live-dot,
+  .hero-scroll-cue .animate-bounce {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hero-art-secondary {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    margin-top: -2.5rem;
+    margin-left: auto;
+    max-width: 85%;
+  }
+
+  .hero-art-stack {
+    min-height: 0;
+  }
 }

@@ -1,13 +1,13 @@
-import { DAYZ_HOME_VIDEO } from '../data/media'
+import { PUBG_HOME_VIDEO } from '../data/media'
 
-type DayZPreviewProps = {
+type PubgPreviewProps = {
   className?: string
   /** Wider crop on product page */
   wide?: boolean
 }
 
-/** Self-hosted DayZ preview scraped from battlelog (mediadelivery embeds 403 off-domain). */
-export function DayZPreview({ className = '', wide = false }: DayZPreviewProps) {
+/** Self-hosted PUBG preview scraped from battlelog (mediadelivery embeds 403 off-domain). */
+export function PubgPreview({ className = '', wide = false }: PubgPreviewProps) {
   return (
     <div className={`video-brand-mask border border-z-soft/20 ${className}`.trim()}>
       <div
@@ -20,16 +20,16 @@ export function DayZPreview({ className = '', wide = false }: DayZPreviewProps) 
           loop
           playsInline
           preload="metadata"
-          poster={DAYZ_HOME_VIDEO.poster}
-          aria-label={DAYZ_HOME_VIDEO.title}
+          poster={PUBG_HOME_VIDEO.poster}
+          aria-label={PUBG_HOME_VIDEO.title}
         >
-          <source src={DAYZ_HOME_VIDEO.src} type="video/mp4" />
+          <source src={PUBG_HOME_VIDEO.src} type="video/mp4" />
         </video>
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-z-bg/50 via-transparent to-z-bg/20" />
         <div className="video-brand-blur video-brand-blur--top" aria-hidden />
         <div className="video-brand-blur" aria-hidden />
       </div>
-      <p className="sr-only">{DAYZ_HOME_VIDEO.title}</p>
+      <p className="sr-only">{PUBG_HOME_VIDEO.title}</p>
     </div>
   )
 }

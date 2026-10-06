@@ -7,9 +7,9 @@ export type Game = {
   popular?: boolean
 }
 
-/** Site is DayZ cheats only — no other titles in the catalog. */
+/** Site is PUBG hacks only — no other titles in the catalog. */
 export const GAMES: Game[] = [
-  { slug: 'dayz', name: 'DayZ', status: 'Undetected', popular: true },
+  { slug: 'pubg', name: 'PUBG', status: 'Undetected', popular: true },
 ]
 
 export function getGame(slug: string) {
@@ -17,26 +17,28 @@ export function getGame(slug: string) {
 }
 
 export function guidePath(slug: string) {
-  return `/${slug.toLowerCase()}-cheats`
+  return `/${slug.toLowerCase()}-hacks`
 }
 
 export function parseGuideSlug(param: string) {
   const lower = param.toLowerCase()
-  return lower.endsWith('-cheats') ? lower.slice(0, -7) : lower
+  if (lower.endsWith('-hacks')) return lower.slice(0, -6)
+  if (lower.endsWith('-cheats')) return lower.slice(0, -7)
+  return lower
 }
 
 export const GUIDE_FEATURES = [
   {
-    name: 'DayZ Aimbot (silent aim)',
-    text: 'Silent-aim tracking with FOV, smoothing and bone selection — fire near a survivor and still land the hit, so it reads as legit even when an admin spectates.',
+    name: 'PUBG Aimbot (silent aim)',
+    text: 'Silent-aim tracking with FOV, smoothing and bone selection — fire near a player and still land the hit, so it reads as legit even when an admin spectates.',
   },
   {
     name: 'Player ESP / Wallhack',
-    text: 'See survivors through walls and treelines with distance, health and gear information when the build supports it — tell friendlies from hostiles instantly.',
+    text: 'See players through walls and treelines with distance, health and gear information when the build supports it — tell friendlies from hostiles instantly.',
   },
   {
-    name: 'Infected ESP',
-    text: 'Track infected before they track you, so a loot run in Cherno or Elektro never turns into a zombie train at the worst moment.',
+    name: 'Vehicle ESP',
+    text: 'Spot vehicles and rotating squads before they cross your lane — useful for hot drops and late-game rotations on Erangel and Miramar.',
   },
   {
     name: 'Loot & Item ESP',
@@ -44,15 +46,15 @@ export const GUIDE_FEATURES = [
   },
   {
     name: 'Radar Hack',
-    text: '2D radar awareness for off-screen survivors across Chernarus and Livonia — spot the third party before it reaches your position.',
+    text: '2D radar awareness for off-screen players across Erangel and Miramar — spot the third party before it reaches your position.',
   },
   {
-    name: 'Base & Stash Intel',
-    text: 'Spot player bases, tents and buried stashes on private servers so raids land on full storage instead of empty walls.',
+    name: 'Loot & Vehicle Intel',
+    text: 'Track care packages, airdrops and high-tier loot zones so your squad lands geared instead of scrambling for level-one vests.',
   },
   {
-    name: 'Official & modded server support',
-    text: 'Works on official DayZ servers and on private servers running most common mod setups.',
+    name: 'Official & custom match support',
+    text: 'Works on official PUBG servers and most custom room / training setups when the build allows it.',
   },
   {
     name: 'Spoofer + Cleaner',
@@ -60,7 +62,7 @@ export const GUIDE_FEATURES = [
   },
   {
     name: 'BattlEye status + support',
-    text: 'Live clear-to-load or Updating status is reviewed after BattlEye and DayZ patches before you load.',
+    text: 'Live clear-to-load or Updating status is reviewed after BattlEye and PUBG patches before you load.',
   },
 ] as const
 

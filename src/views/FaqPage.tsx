@@ -3,7 +3,7 @@ import { Navbar } from '../components/Navbar'
 import { SiteFooter } from '../components/SiteFooter'
 import { SITE_FAQS } from '../data/faqs'
 import { CheckoutLink } from '../components/CheckoutLink'
-import { SITE_NAME } from '../data/site'
+import { HOME_HEADINGS, SITE_NAME } from '../data/site'
 
 export function FaqPage() {
   return (
@@ -19,11 +19,11 @@ export function FaqPage() {
               {SITE_NAME}
             </p>
             <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-              DayZ Cheats FAQ
+              {HOME_HEADINGS.h1}
             </h1>
             <p className="mt-4 text-base leading-relaxed text-white/60">
-              BattlEye status, ESP, Aimbot, radar hack, servers, buying, loading, support and
-              refunds — straight answers before you checkout.
+              Undetected PUBG hacks, PUBG cheats, aimbot, wallhack, ESP, radar hack PC, Steam/Epic,
+              HWID spoofer, mobile vs PC, ban risk and download questions — answered before checkout.
             </p>
           </div>
         </section>
@@ -75,7 +75,7 @@ export function FaqPage() {
                 Support
               </a>
               <CheckoutLink className="cta-gradient inline-flex h-11 items-center justify-center rounded-full px-6 text-sm font-semibold text-white">
-                Buy DayZ Cheats
+                Buy PUBG Hacks
               </CheckoutLink>
             </div>
           </div>

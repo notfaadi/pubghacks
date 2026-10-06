@@ -1,8 +1,8 @@
-# DayZ Cheats (dayzcheats.io)
+# PUBG Hacks (pubghacks.org)
 
-Static Astro site for DayZ Standalone cheats — silent aim Aimbot, ESP, wallhack, loot ESP, radar hack — Cloudflare Workers ready.
+Static Astro site for PUBG PC cheats — silent aim Aimbot, ESP, wallhack, loot ESP, radar hack — Cloudflare Workers ready.
 
-Worldwide English SEO targeting **dayz cheats**, **dayz hacks**, and **undetected dayz cheats**.
+Worldwide English SEO targeting **pubg hacks**, **pubg hacks**, and **undetected pubg hacks**.
 
 ```bash
 npm install

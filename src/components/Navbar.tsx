@@ -7,7 +7,7 @@ import { SITE_NAME } from '../data/site'
 /** Lean nav — Reviews stay in footer. */
 const NAV_LINKS = [
   { label: 'Forums', to: '/forums' },
-  { label: 'Product', to: '/dayz-cheats' },
+  { label: 'Product', to: '/pubg-hacks' },
   { label: 'Reviews', to: '/reviews' },
   { label: 'FAQ', to: '/faq' },
   { label: 'Support', to: '/support' },
@@ -52,7 +52,7 @@ export function Navbar({ onVideo: _onVideo = false }: NavbarProps) {
             ))}
           </div>
           <CheckoutLink className="cta-gradient flex items-center self-stretch rounded-full px-5 text-sm font-semibold text-white transition-opacity hover:opacity-90">
-            Get
+            Buy Now
           </CheckoutLink>
         </div>
 
@@ -115,7 +115,7 @@ export function Navbar({ onVideo: _onVideo = false }: NavbarProps) {
             onClick={() => setMenuOpen(false)}
             className="cta-gradient block w-full rounded-full px-6 py-3 text-center text-sm font-semibold text-white"
           >
-            Get
+            Buy Now
           </CheckoutLink>
         </div>
       </div>

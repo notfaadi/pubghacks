@@ -1,4 +1,4 @@
-﻿export type PolicySection = {
+export type PolicySection = {
   heading: string
   body: string[]
 }
@@ -18,12 +18,12 @@ export const POLICY_PAGES: PolicyPageContent[] = [
   {
     slug: 'privacy',
     path: '/privacy',
-    title: 'Privacy Policy | DayZ Cheats PC',
+    title: 'Privacy Policy | PUBG Hacks PC',
     description:
-      'How dayzcheats.io handles order details, delivery email, support messages and basic site analytics for DayZ cheats.',
-    h1: 'DayZ Cheats Privacy Policy',
+      'How pubghacks.org handles order details, delivery email, support messages and basic site analytics for PUBG hacks.',
+    h1: 'PUBG Hacks Privacy Policy',
     intro:
-      'This page explains what we collect when you browse dayzcheats.io, buy a DayZ Cheats license, or contact support — and what we do not collect.',
+      'This page explains what we collect when you browse pubghacks.org, buy a PUBG Hacks license, or contact support � and what we do not collect.',
     sections: [
       {
         heading: 'What we collect',
@@ -37,7 +37,7 @@ export const POLICY_PAGES: PolicyPageContent[] = [
         heading: 'How we use it',
         body: [
           'Order email is used for license delivery, renewals, and reply-to support.',
-          'Support details are used only to resolve your ticket — loader errors, exclusions, status questions, or refund requests that fall under our refunds policy.',
+          'Support details are used only to resolve your ticket � loader errors, exclusions, status questions, or refund requests that fall under our refunds policy.',
           'Aggregate traffic data helps us keep pages fast and catch abuse. It is not used to profile you for ads.',
         ],
       },
@@ -45,8 +45,8 @@ export const POLICY_PAGES: PolicyPageContent[] = [
         heading: 'Cookies and third parties',
         body: [
           'Essential cookies may be set by checkout or CDN providers so payment and delivery work.',
-          'Preview media is hosted on dayzcheats.io. Third-party embeds are not used for the main product preview.',
-          'Official DayZ and Bohemia Interactive links are external. Their privacy policies apply once you leave dayzcheats.io.',
+          'Preview media is hosted on pubghacks.org. Third-party embeds are not used for the main product preview.',
+          'Official PUBG and Krafton links are external. Their privacy policies apply once you leave pubghacks.org.',
         ],
       },
       {
@@ -66,24 +66,24 @@ export const POLICY_PAGES: PolicyPageContent[] = [
   {
     slug: 'terms',
     path: '/terms',
-    title: 'Terms of Use | DayZ Cheats PC',
+    title: 'Terms of Use | PUBG Hacks PC',
     description:
-      'License rules, age limits, BattlEye risk, and liability limits for DayZ cheats on dayzcheats.io.',
-    h1: 'DayZ Cheats Terms of Use',
+      'License rules, age limits, BattlEye risk, and liability limits for PUBG hacks on pubghacks.org.',
+    h1: 'PUBG Hacks Terms of Use',
     intro:
-      'Buying or running DayZ Cheats means you accept these terms. A license covers personal use of Aimbot, ESP, wallhack, loot ESP and radar tools for DayZ Standalone on Windows PC — nothing beyond that.',
+      'Buying or running PUBG Hacks means you accept these terms. A license covers personal use of Aimbot, ESP, wallhack, loot ESP and radar tools for PUBG PC on Windows PC � nothing beyond that.',
     sections: [
       {
         heading: 'Acceptance and what a license covers',
         body: [
-          'A key unlocks the current DayZ Cheats build for the duration you purchased (weekly or monthly plans where offered).',
+          'A key unlocks the current PUBG Hacks build for the duration you purchased (weekly or monthly plans where offered).',
           'Handing the package to someone else, reselling it, sharing accounts, or reverse-engineering the loader breaks these terms and can end your access without a refund.',
         ],
       },
       {
         heading: 'Risk and anti-cheat disclaimer',
         body: [
-          'DayZ uses BattlEye, and private servers add their own admin moderation. Using third-party software can violate the game’s terms and lead to account or server penalties.',
+          'PUBG uses BattlEye, and private servers add their own admin moderation. Using third-party software can violate the game�s terms and lead to account or server penalties.',
           'We push rebuilds after BattlEye and game updates when needed, but nothing here guarantees a build stays clear forever or that an account stays safe.',
           'All risk sits with you. We accept no liability for bans, lost characters, or other damage tied to using the product. Check live status before you load.',
         ],
@@ -98,8 +98,8 @@ export const POLICY_PAGES: PolicyPageContent[] = [
       {
         heading: 'Limitation of liability and disputes',
         body: [
-          'The product is provided “as is.” If anything goes wrong, our total liability is capped at what you paid for the affected license in the previous 30 days.',
-          'Open a ticket on Support first. Governing law follows our payment processor’s jurisdiction unless local law requires otherwise.',
+          'The product is provided �as is.� If anything goes wrong, our total liability is capped at what you paid for the affected license in the previous 30 days.',
+          'Open a ticket on Support first. Governing law follows our payment processor�s jurisdiction unless local law requires otherwise.',
           'We may update these terms on this page. Continued use after a change means the new version applies.',
         ],
       },
@@ -113,12 +113,12 @@ export const POLICY_PAGES: PolicyPageContent[] = [
   {
     slug: 'refunds',
     path: '/refunds',
-    title: 'Refund Policy | DayZ Cheats PC',
+    title: 'Refund Policy | PUBG Hacks PC',
     description:
-      'When DayZ Cheats refunds apply for digital DayZ licenses, delivery failures, and Updating status windows on dayzcheats.io.',
-    h1: 'DayZ Cheats Refund Policy',
+      'When PUBG Hacks refunds apply for digital PUBG licenses, delivery failures, and Updating status windows on pubghacks.org.',
+    h1: 'PUBG Hacks Refund Policy',
     intro:
-      'DayZ Cheats licenses are digital goods. This page covers when we can refund, when we cannot, and how to open a request with your order ID.',
+      'PUBG Hacks licenses are digital goods. This page covers when we can refund, when we cannot, and how to open a request with your order ID.',
     sections: [
       {
         heading: 'When refunds are available',
@@ -132,7 +132,7 @@ export const POLICY_PAGES: PolicyPageContent[] = [
         heading: 'When refunds are not available',
         body: [
           'Change of mind after a working key has been delivered and activated.',
-          'Bans, admin kicks, or gameplay outcomes — status is never a permanent guarantee.',
+          'Bans, admin kicks, or gameplay outcomes � status is never a permanent guarantee.',
           'Issues caused by skipping antivirus exclusions, running conflicting overlays, or loading while status is Updating.',
           'Heavily modded private servers that block third-party software at the server level.',
           'Shared, resold, or otherwise invalidated keys under the Terms of Use.',

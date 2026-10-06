@@ -3,7 +3,7 @@ import { join, relative } from 'node:path'
 
 const root = join(import.meta.dirname, '..')
 const dist = join(root, 'dist')
-const site = 'https://dayzcheats.io'
+const site = 'https://pubghacks.org'
 const failures = []
 
 function fail(message) {
@@ -73,18 +73,18 @@ for (const file of files) {
 }
 
 const home = readFileSync(join(dist, 'index.html'), 'utf8')
-const product = readFileSync(join(dist, 'dayz-cheats', 'index.html'), 'utf8')
+const product = readFileSync(join(dist, 'pubg-hacks', 'index.html'), 'utf8')
 const reviews = readFileSync(join(dist, 'reviews', 'index.html'), 'utf8')
 const faq = readFileSync(join(dist, 'faq', 'index.html'), 'utf8')
 const support = readFileSync(join(dist, 'support', 'index.html'), 'utf8')
 const forums = readFileSync(join(dist, 'forums', 'index.html'), 'utf8')
 
 if (
-  !home.includes('<title>DayZ Cheats | DayZ Cheat Aimbot, ESP &amp; Hacks</title>')
+  !home.includes('<title>Undetected PUBG Hacks &amp; Cheats 2026 | Aimbot, ESP, Wallhack Download</title>')
 ) {
   fail('Homepage does not own the exact transactional title')
 }
-if (product.includes('<title>Buy DayZ Cheats')) fail('Product details page competes with homepage')
+if (product.includes('<title>Buy PUBG Hacks')) fail('Product details page competes with homepage')
 if ((faq.match(/"@type":"FAQPage"/g) || []).length !== 1) fail('/faq must own one FAQPage')
 for (const [name, html] of [
   ['home', home],
@@ -99,7 +99,7 @@ for (const [name, html] of [
   ['product', product],
   ['reviews', reviews],
 ]) {
-  if (!html.includes('"@id":"https://dayzcheats.io/#product"')) {
+  if (!html.includes('"@id":"https://pubghacks.org/#product"')) {
     fail(`${name}: missing shared Product ID`)
   }
 }
@@ -137,8 +137,8 @@ for (const file of files) {
   const twImage = html.match(/<meta name="twitter:image" content="([^"]+)"/)?.[1]
   const robotsMeta = html.match(/<meta name="robots" content="([^"]+)"/)?.[1]
 
-  if (!ogImage?.startsWith('https://dayzcheats.io/og/') || !ogImage.endsWith('.jpg')) {
-    fail(`${page}: og:image must be https://dayzcheats.io/og/*.jpg for SERP thumbnails`)
+  if (!ogImage?.startsWith('https://pubghacks.org/og/') || !ogImage.endsWith('.jpg')) {
+    fail(`${page}: og:image must be https://pubghacks.org/og/*.jpg for SERP thumbnails`)
   }
   if (!twImage || twImage !== ogImage) {
     fail(`${page}: twitter:image must match og:image`)
@@ -164,7 +164,7 @@ for (const [name, html] of [
   ['forums', forums],
 ]) {
   if (!html.includes('/media/dayz-')) {
-    fail(`${name}: missing visible DayZ media in page body`)
+    fail(`${name}: missing visible PUBG media in page body`)
   }
 }
 for (const [name, html, og] of [
@@ -177,7 +177,7 @@ for (const [name, html, og] of [
   }
 }
 if (!product.includes('/videos/dayz-preview.mp4') || !product.includes('/media/dayz-video-thumb.jpg')) {
-  fail('Product page is missing the self-hosted DayZ preview video')
+  fail('Product page is missing the self-hosted PUBG preview video')
 }
 if (home.includes('iframe.mediadelivery.net') || product.includes('iframe.mediadelivery.net')) {
   fail('Pages still embed blocked mediadelivery video (403 off-domain)')
@@ -193,11 +193,11 @@ if (
 const sitemap = readFileSync(join(dist, 'sitemap.xml'), 'utf8')
 if (sitemap.includes('<sitemapindex')) fail('sitemap.xml must be a single urlset, not an index')
 if (/forums\/(instructions|how-to-load)/.test(sitemap)) fail('Retired forum remains in sitemap.xml')
-if (!sitemap.includes('https://dayzcheats.io/')) {
-  fail('sitemap.xml must use https://dayzcheats.io URLs')
+if (!sitemap.includes('https://pubghacks.org/')) {
+  fail('sitemap.xml must use https://pubghacks.org URLs')
 }
 if (!sitemap.includes('/videos/dayz-preview.mp4')) {
-  fail('sitemap.xml missing DayZ preview video entry')
+  fail('sitemap.xml missing PUBG preview video entry')
 }
 if (!sitemap.includes('xmlns:video=')) {
   fail('sitemap.xml missing video namespace for Google video indexing')
@@ -216,7 +216,7 @@ const uniqueSitemapUrls = new Set(pageLocs)
 const imageLocs = [...sitemap.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map((match) => match[1])
 const requiredImages = [
   '/og/home.jpg',
-  '/og/dayz-cheats.jpg',
+  '/og/pubg-hacks.jpg',
   '/og/forums.jpg',
   '/og/reviews.jpg',
   '/og/faq.jpg',
@@ -276,7 +276,7 @@ if (!existsSync(join(dist, 'robots.txt'))) fail('dist/robots.txt is missing')
 if (!existsSync(join(dist, '_routes.json'))) fail('dist/_routes.json is missing')
 
 const robots = readFileSync(join(dist, 'robots.txt'), 'utf8')
-if (!robots.includes('Sitemap: https://dayzcheats.io/sitemap.xml')) {
+if (!robots.includes('Sitemap: https://pubghacks.org/sitemap.xml')) {
   fail('robots.txt must point at the canonical HTTPS sitemap')
 }
 if (!robots.includes('Allow: /sitemap.xml')) {
@@ -296,7 +296,7 @@ if (!routes.exclude?.includes('/sitemap.xml') || !routes.exclude?.includes('/rob
 
 for (const asset of [
   'public/og/home.jpg',
-  'public/og/dayz-cheats.jpg',
+  'public/og/pubg-hacks.jpg',
   'public/og/forums.jpg',
   'public/og/reviews.jpg',
   'public/og/faq.jpg',
@@ -323,10 +323,10 @@ if (!redirects.includes('/sitemap-index.xml')) {
   fail('_redirects missing sitemap-index.xml -> /sitemap.xml redirect')
 }
 if (!redirects.includes('/tarkov-cheats')) {
-  fail('_redirects must map the legacy /tarkov-cheats route to /dayz-cheats')
+  fail('_redirects must map the legacy /tarkov-cheats route to /pubg-hacks')
 }
-if (!redirects.includes('/dayz-hacks')) {
-  fail('_redirects must map the /dayz-hacks keyword alias to /dayz-cheats')
+if (!redirects.includes('/pubg-hacks')) {
+  fail('_redirects must map the /pubg-hacks keyword alias to /pubg-hacks')
 }
 
 const worker = readFileSync(join(root, 'workers', 'site.js'), 'utf8')

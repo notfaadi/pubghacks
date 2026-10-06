@@ -6,6 +6,7 @@ import {
   absoluteUrl,
   type PageSeo,
 } from '../data/site'
+import { SEO_KEYWORDS_ALL } from '../data/seo-keywords'
 import { buildPageJsonLd } from '../lib/seo'
 
 type Props = {
@@ -38,7 +39,7 @@ const isHome = seo.path === '/' || seo.path === ''
 /** Preload OG only when it supports LCP (hero/product/forums) — not text pages */
 const preloadOg =
   isHome ||
-  seo.path === '/dayz-cheats' ||
+  seo.path === '/pubg-hacks' ||
   seo.path === '/forums' ||
   seo.path.startsWith('/forums/')
 ---
@@ -69,6 +70,7 @@ const preloadOg =
 
     <title>{seo.title}</title>
     <meta name="description" content={seo.description} />
+    <meta name="keywords" content={SEO_KEYWORDS_ALL.join(', ')} />
     <meta name="robots" content={robots} />
     <meta name="googlebot" content={robots} />
     <meta name="bingbot" content={robots} />

@@ -1,31 +1,20 @@
-﻿import { DAYZ_OG } from './images'
+import { PUBG_OG } from './images'
 import { PAGE_OG } from './og'
+import { SEO_KEYWORDS_ALL } from './seo-keywords'
 
-export const SITE_URL = 'https://dayzcheats.io'
-export const SITE_NAME = 'DayZ Cheats'
-export const SITE_HOST = 'dayzcheats.io'
+export const SITE_URL = 'https://pubghacks.org'
+export const SITE_NAME = 'PUBG Hacks'
+export const SITE_HOST = 'pubghacks.org'
 
 /**
  * Sole purpose — used in schema + about copy.
- * Single-product site: DayZ / DayZ Standalone cheats for PC (worldwide).
- * Canonical host is apex https://dayzcheats.io (www 301s to apex in the Worker).
+ * Single-product site: PUBG / PUBG PC hacks for PC (worldwide).
+ * Canonical host is apex https://pubghacks.org (www 301s to apex in the Worker).
  */
 export const SITE_PURPOSE =
-  'Buy DayZ cheats for DayZ Standalone on Windows PC — silent-aim Aimbot, player and loot ESP, wallhack, radar hack and live BattlEye status with instant digital delivery.'
+  'Premium PUBG hacks and PUBG cheats for PlayerUnknown\'s Battlegrounds on Windows PC — undetected-style Aimbot, player ESP, loot ESP, wallhack, PUBG radar hack PC, mod menu tools, HWID spoofer options and live BattlEye status with instant digital download after checkout.'
 
-export const SITE_ABOUT = [
-  'dayz cheats',
-  'dayz cheat',
-  'dayz hacks',
-  'dayz hack',
-  'dayz standalone cheats',
-  'dayz aimbot',
-  'dayz esp',
-  'dayz wallhack',
-  'dayz radar hack',
-  'battleye dayz cheats',
-  'dayz cheat aimbot',
-] as const
+export const SITE_ABOUT = SEO_KEYWORDS_ALL
 
 /** Offer price shown on product schema + purchase UI. */
 export const PRODUCT_PRICE_USD = '35'
@@ -35,7 +24,7 @@ export const SEO_REGIONS = [
   { hreflang: 'x-default', label: 'Default' },
 ] as const
 
-export const OG_IMAGE = DAYZ_OG
+export const OG_IMAGE = PUBG_OG
 
 export type PageSeo = {
   title: string
@@ -53,74 +42,74 @@ const INDEX_ROBOTS =
 
 export const SEO = {
   home: {
-    title: 'DayZ Cheats | DayZ Cheat Aimbot, ESP & Hacks',
+    title: 'Undetected PUBG Hacks & Cheats 2026 | Aimbot, ESP, Wallhack Download',
     description:
-      'Buy DayZ cheats for DayZ Standalone — silent aim Aimbot, player and loot ESP, wallhack and radar hack from $35. Check live BattlEye status, then checkout.',
+      'Get undetected PUBG hacks for PC: PUBG aimbot, PUBG ESP, wallhack, radar hack, loot ESP, recoil control and mod menu features. Private Battlegrounds hacks with HWID spoofer support. Works on Steam & Epic — download via pubghacks.org.',
     path: '/',
     ogType: 'website',
     image: PAGE_OG.home,
-    imageAlt: 'DayZ Cheats — DayZ Aimbot, ESP and radar hack for PC',
+    imageAlt: 'Undetected PUBG hacks — aimbot, ESP, wallhack and radar for PC',
     robots: INDEX_ROBOTS,
   },
   forums: {
-    title: 'DayZ Cheats Guides | Aimbot, ESP, Radar & Status',
+    title: 'PUBG Hacks Guides | Aimbot, ESP, Wallhack, Radar & Install',
     description:
-      'DayZ cheats guides hub — silent aim, player and loot ESP, radar hack, antivirus exclusions, loader setup and BattlEye status articles before you buy.',
+      'PUBG cheats setup guides: how to install PUBG hacks, macro settings, anti-cheat status, player ESP, loot ESP, radar cheat tutorials and mod menu hotkeys for PlayerUnknown\'s Battlegrounds PC.',
     path: '/forums',
     ogType: 'website',
     image: PAGE_OG.forums,
-    imageAlt: 'DayZ Cheats setup guides for Aimbot, ESP and BattlEye',
+    imageAlt: 'PUBG hack install guides — aimbot, ESP, wallhack',
     robots: INDEX_ROBOTS,
   },
   reviews: {
-    title: 'DayZ Cheats Reviews | Buyer Feedback on DayZ Hacks',
+    title: 'Best PUBG Cheats Reviews | Undetected Aimbot & ESP Feedback',
     description:
-      'Read DayZ cheats reviews covering silent aim, player ESP, loot ESP and BattlEye rebuilds before you buy a DayZ Standalone license for PC.',
+      'Read reviews for undetected PUBG hacks and PUBG cheats — aimbot, player ESP, radar hack PC, recoil scripts and BattlEye rebuild honesty before you buy Battlegrounds hacks.',
     path: '/reviews',
     ogType: 'website',
     image: PAGE_OG.reviews,
-    imageAlt: 'DayZ Cheats buyer reviews for DayZ Standalone',
+    imageAlt: 'PUBG cheats reviews — undetected aimbot and ESP',
     robots: INDEX_ROBOTS,
   },
   faq: {
-    title: 'DayZ Cheats FAQ | Price, BattlEye Status & Setup',
+    title: 'Safe PUBG Cheats FAQ 2026 | Undetected Aimbot, Radar & Wallhack',
     description:
-      'FAQ for buying DayZ cheats on Windows PC — price, Aimbot and ESP features, BattlEye status, private server support, loader setup and delivery.',
+      'FAQ on undetected PUBG hacks, ban risk, free PUBG aimbot myths, PUBG mobile vs PC, Steam/Epic support, HWID spoofer, speed hack, no recoil macro and anti-cheat bypass questions answered.',
     path: '/faq',
     ogType: 'website',
     image: PAGE_OG.faq,
-    imageAlt: 'DayZ Cheats FAQ — price, BattlEye and setup',
+    imageAlt: 'PUBG hacks FAQ — safety, aimbot, ESP, wallhack',
     robots: INDEX_ROBOTS,
   },
   support: {
-    title: 'DayZ Cheats Support | Loader, Delivery & Setup Help',
+    title: 'PUBG Hacks Support | Loader, Download & Mod Menu Help',
     description:
-      'Get help buying and loading DayZ cheats — delivery email, Windows setup, antivirus exclusions, loader errors and BattlEye status updates.',
+      'Support for PUBG hack download, loader errors, mod menu setup, game enhancement tools and delivery — 24/7 help for pubghacks.org buyers on Windows PC.',
     path: '/support',
     ogType: 'website',
     image: PAGE_OG.support,
-    imageAlt: 'DayZ Cheats support for loader and delivery help',
+    imageAlt: 'PUBG cheats support — loader and download help',
     robots: INDEX_ROBOTS,
   },
   product: {
-    title: 'DayZ Cheats Price & Checkout | Aimbot, ESP, Radar',
+    title: '#1 PUBG Hacks Download | Private Aimbot & ESP Cheats [Undetected]',
     description:
-      'DayZ cheats price and checkout — silent aim Aimbot, player ESP, loot ESP, wallhack, radar hack, spoofer and live BattlEye status from $35.',
-    path: '/dayz-cheats',
+      'Download private PUBG cheats: undetected aimbot, PUBG wallhack, player ESP, loot ESP, PUBG radar hack PC, recoil control script and optional HWID spoofer. Steam & Epic Games compatible from $35.',
+    path: '/pubg-hacks',
     ogType: 'product',
     image: PAGE_OG.product,
-    imageAlt: 'DayZ Aimbot, ESP and radar hack product details',
+    imageAlt: 'PUBG mod menu — aimbot, ESP, wallhack product page',
     robots: INDEX_ROBOTS,
   },
 } as const satisfies Record<string, PageSeo>
 
 export const HOME_HEADINGS = {
-  h1: 'DayZ Cheats — DayZ Cheat Aimbot, ESP & Hacks',
-  h2Features: 'DayZ Aimbot, ESP, loot ESP & radar hack',
-  h2Featured: 'DayZ ESP and silent aim Aimbot',
-  h2About: 'Clear BattlEye status before you buy DayZ cheats',
-  h2Access: 'Buy DayZ Cheats',
-  h2Faq: 'DayZ Cheats FAQ',
+  h1: 'Premium PUBG Hacks & Cheats — Undetected & Updated Daily',
+  h2Features: 'PUBG aimbot, PUBG ESP, wallhack & radar hack PC',
+  h2Featured: 'PUBG cheats & Battlegrounds hacks features',
+  h2About: 'Best undetected PUBG hacks — clear status before download',
+  h2Access: 'PUBG Hacks download & checkout',
+  h2Faq: 'PUBG cheats FAQ — ban risk, aimbot & ESP',
 } as const
 
 export function absoluteUrl(path: string) {
