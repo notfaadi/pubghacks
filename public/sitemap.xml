@@ -11,9 +11,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://pubghack.net/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pubghack.net/" />
     <image:image>
-      <image:loc>https://pubghack.net/og/home.jpg</image:loc>
+      <image:loc>https://pubghack.net/og/pubg-hacks-share.jpg</image:loc>
       <image:title>PUBG Hacks Open Graph</image:title>
       <image:caption>Google and social preview image for pubghack.net homepage.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://pubghack.net/og/home.jpg</image:loc>
+      <image:title>PUBG Hacks Homepage OG</image:title>
+      <image:caption>Legacy homepage share image for pubghack.net.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://pubghack.net/media/dayz-hero-full.webp</image:loc>

@@ -7,7 +7,7 @@ export const SITE_NAME = 'PUBG Hacks'
 export const SITE_HOST = 'pubghack.net'
 
 /** Bumps social crawlers when Open Graph JPEGs change (WhatsApp, Slack, iMessage). */
-export const OG_SHARE_VERSION = '20260307'
+export const OG_SHARE_VERSION = '20260307b'
 
 /**
  * Sole purpose — used in schema + about copy.

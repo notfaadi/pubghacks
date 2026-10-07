@@ -37,6 +37,7 @@ const ALL_SITE_IMAGES = [
   TACTICAL_ART,
   VIDEO_THUMB,
   '/og/home.jpg',
+  '/og/pubg-hacks-share.jpg',
   '/og/pubg-hacks.jpg',
   '/og/forums.jpg',
   '/og/reviews.jpg',
@@ -176,9 +177,14 @@ function imagesForPath(path, games, forums) {
   if (path === '/') {
     return [
       {
-        src: '/og/home.jpg',
+        src: '/og/pubg-hacks-share.jpg',
         title: 'PUBG Hacks Open Graph',
         caption: 'Google and social preview image for pubghack.net homepage.',
+      },
+      {
+        src: '/og/home.jpg',
+        title: 'PUBG Hacks Homepage OG',
+        caption: 'Legacy homepage share image for pubghack.net.',
       },
       {
         src: HERO_FULL,

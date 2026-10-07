@@ -12,7 +12,7 @@ import {
 } from '../data/site'
 import { getReviewsAggregate, REVIEWS } from '../data/reviews'
 import type { GameStatus } from '../data/games'
-import { PAGE_MEDIA } from '../data/media'
+import { PAGE_MEDIA, PUBG_HERO_POSTER } from '../data/media'
 
 export const PRODUCT_ID = `${SITE_URL}/#product`
 
@@ -126,10 +126,9 @@ export function productCoreJsonLd() {
     description: SITE_PURPOSE,
     url: `${SITE_URL}/pubg-hacks`,
     image: [
+      absoluteAsset('/og/pubg-hacks-share.jpg'),
       absoluteAsset('/og/pubg-hacks.jpg'),
-      absoluteAsset('/og/home.jpg'),
-      absoluteAsset(PAGE_MEDIA.product.image),
-      absoluteAsset(PAGE_MEDIA.home.image),
+      absoluteAsset(PUBG_HERO_POSTER),
     ],
     brand: { '@type': 'Brand', name: SITE_NAME },
     manufacturer: { '@id': `${SITE_URL}/#organization` },
@@ -154,7 +153,7 @@ export function productDetailJsonLd(status: GameStatus) {
   return {
     ...productCoreJsonLd(),
     url: `${SITE_URL}/pubg-hacks`,
-    image: absoluteAsset(PAGE_MEDIA.product.image),
+    image: absoluteAsset(PUBG_HERO_POSTER),
     about: {
       '@type': 'VideoGame',
       name: 'PUBG',

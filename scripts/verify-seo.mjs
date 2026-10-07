@@ -219,6 +219,7 @@ const uniqueSitemapUrls = new Set(pageLocs)
 const imageLocs = [...sitemap.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map((match) => match[1])
 const requiredImages = [
   '/og/home.jpg',
+  '/og/pubg-hacks-share.jpg',
   '/og/pubg-hacks.jpg',
   '/og/forums.jpg',
   '/og/reviews.jpg',
@@ -299,6 +300,7 @@ if (!routes.exclude?.includes('/sitemap.xml') || !routes.exclude?.includes('/rob
 
 for (const asset of [
   'public/og/home.jpg',
+  'public/og/pubg-hacks-share.jpg',
   'public/og/pubg-hacks.jpg',
   'public/og/forums.jpg',
   'public/og/reviews.jpg',
