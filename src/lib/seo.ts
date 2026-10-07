@@ -47,7 +47,7 @@ export function siteIdentityGraph() {
         'PUBG ESP',
         'PUBG wallhack',
         'Battlegrounds hacks',
-        'pubghacks.org',
+        'pubghack.net',
         "PlayerUnknown's Battlegrounds cheats",
       ],
       url: SITE_URL,
@@ -141,7 +141,7 @@ export function productCoreJsonLd() {
       description:
         'Preview of PUBG Aimbot, ESP menu, loot highlighting and radar hack features on PC.',
       thumbnailUrl: absoluteAsset('/media/dayz-video-thumb.jpg'),
-      contentUrl: absoluteAsset('/videos/dayz-preview.mp4'),
+      contentUrl: absoluteAsset('/videos/pubg-hero-live.mp4'),
       uploadDate: '2026-09-16',
       inLanguage: 'en',
     },

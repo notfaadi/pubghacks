@@ -9,7 +9,7 @@ export type SupportFaq = {
 }
 
 export const SUPPORT_INTRO =
-  'Support for PUBG Hacks buyers on pubghacks.org � loader setup, BattlEye status, menu config and delivery help after you purchase PUBG hacks.'
+  'Support for PUBG Hacks buyers on pubghack.net � loader setup, BattlEye status, menu config and delivery help after you purchase PUBG hacks.'
 
 export const SUPPORT_TOPICS: SupportTopic[] = [
   {
@@ -44,7 +44,7 @@ export const SUPPORT_TOPICS: SupportTopic[] = [
 export const SUPPORT_FAQS: SupportFaq[] = [
   {
     q: 'How do I contact PUBG Hacks support?',
-    a: 'Open your order on pubghacks.org and use the checkout support channel tied to your purchase. Include a status screenshot (clear to load / Updating) and whether you need load, menu or delivery help.',
+    a: 'Open your order on pubghack.net and use the checkout support channel tied to your purchase. Include a status screenshot (clear to load / Updating) and whether you need load, menu or delivery help.',
   },
   {
     q: 'The loader will not open � what first?',
@@ -60,6 +60,6 @@ export const SUPPORT_FAQS: SupportFaq[] = [
   },
   {
     q: 'Where is my delivery?',
-    a: 'Delivery is digital after checkout on pubghacks.org. Use only that loader link. Third-party mirrors are unsupported and unsafe.',
+    a: 'Delivery is digital after checkout on pubghack.net. Use only that loader link. Third-party mirrors are unsupported and unsafe.',
   },
 ]

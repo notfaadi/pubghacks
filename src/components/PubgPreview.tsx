@@ -6,7 +6,7 @@ type PubgPreviewProps = {
   wide?: boolean
 }
 
-/** Self-hosted PUBG preview scraped from battlelog (mediadelivery embeds 403 off-domain). */
+/** Self-hosted PUBG live wallpaper clip (same source as homepage hero). */
 export function PubgPreview({ className = '', wide = false }: PubgPreviewProps) {
   return (
     <div className={`video-brand-mask border border-z-soft/20 ${className}`.trim()}>

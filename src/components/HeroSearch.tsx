@@ -47,6 +47,7 @@ export function HeroSearch({
       'pubg hacks',
       'pubg hack',
       'pubg pc hacks',
+      'pubghack',
       'pubghacks',
       'cheats',
     ]

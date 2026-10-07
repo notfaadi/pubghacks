@@ -7,7 +7,7 @@ const TEXT_EXT = new Set(['.ts', '.tsx', '.astro', '.js', '.mjs', '.json', '.txt
 
 /** Longest-first replacements for visible copy and routes. */
 const REPLACEMENTS = [
-  ['pubghacks.org', 'pubghacks.org'],
+  ['pubghack.net', 'pubghack.net'],
   ['DayZ Standalone', 'PUBG PC'],
   ['DayZ Cheats', 'PUBG Hacks'],
   ['DayZ cheats', 'PUBG hacks'],

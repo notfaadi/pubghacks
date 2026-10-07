@@ -10,7 +10,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const publicDir = join(root, 'public')
 const dataDir = join(root, 'src', 'data')
 const pagesDir = join(root, 'src', 'pages')
-const SITE = (process.env.SITE_URL || 'https://pubghacks.org').replace(/\/$/, '')
+const SITE = (process.env.SITE_URL || 'https://pubghack.net').replace(/\/$/, '')
 const TODAY = new Date().toLocaleDateString('en-CA')
 const HREFLANG = ['en', 'x-default']
 
@@ -23,7 +23,7 @@ const CONTROL = '/media/dayz-control-art.jpg'
 const HOME_ART = '/media/dayz-home-art.jpg'
 const TACTICAL_ART = '/media/dayz-tactical-art.jpg'
 const VIDEO_THUMB = '/media/dayz-video-thumb.jpg'
-const PREVIEW_VIDEO = '/videos/dayz-preview.mp4'
+const PREVIEW_VIDEO = '/videos/pubg-hero-live.mp4'
 const OG_DEFAULT = '/og/pubg-hacks.jpg'
 
 const ALL_SITE_IMAGES = [
@@ -174,7 +174,7 @@ function imagesForPath(path, games, forums) {
       {
         src: '/og/home.jpg',
         title: 'PUBG Hacks Open Graph',
-        caption: 'Google and social preview image for pubghacks.org homepage.',
+        caption: 'Google and social preview image for pubghack.net homepage.',
       },
       {
         src: HERO_FULL,
@@ -194,7 +194,7 @@ function imagesForPath(path, games, forums) {
       {
         src: OG_DEFAULT,
         title: 'PUBG Hacks Product Social Preview',
-        caption: 'Default Open Graph image for pubghacks.org product pages.',
+        caption: 'Default Open Graph image for pubghack.net product pages.',
       },
     ]
   }
@@ -259,7 +259,7 @@ function imagesForPath(path, games, forums) {
         title: `${forum?.title || slug} Open Graph`,
         caption:
           forum?.metaDescription ||
-          `Google preview image for ${forum?.title || slug} on pubghacks.org.`,
+          `Google preview image for ${forum?.title || slug} on pubghack.net.`,
       },
       {
         src: FORUM_IMAGES[slug] || MENU,
@@ -303,7 +303,7 @@ function imagesForPath(path, games, forums) {
       {
         src: '/og/privacy.jpg',
         title: 'PUBG Hacks Privacy Policy',
-        caption: 'Privacy policy preview for pubghacks.org orders and support.',
+        caption: 'Privacy policy preview for pubghack.net orders and support.',
       },
     ]
   }
@@ -450,8 +450,8 @@ function validate(games, forums, allPaths, sitemap) {
   if (/Tarkov|tarkovcheats|EFT Reaper|Warzone|warzonecheats|Ricochet/i.test(sitemap)) {
     errors.push('Sitemap still contains legacy Tarkov/Warzone labels')
   }
-  if (!sitemap.includes('pubghacks.org')) {
-    errors.push('Sitemap must target pubghacks.org')
+  if (!sitemap.includes('pubghack.net')) {
+    errors.push('Sitemap must target pubghack.net')
   }
   if (/tarkovcheats|warzonecheats|wardogshacks|theisle/i.test(sitemap)) {
     errors.push('Sitemap contains a non-PUBG domain')

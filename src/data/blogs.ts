@@ -27,10 +27,10 @@ export const BLOGS: BlogPost[] = [
     slug: 'features-list',
     title: 'PUBG Cheat Features Checklist',
     excerpt:
-      'Checklist of every PUBG hack module on pubghacks.org — silent aim, player ESP, loot ESP, wallhack, radar hack and spoofer — before you open checkout from $35.',
+      'Checklist of every PUBG hack module on pubghack.net — silent aim, player ESP, loot ESP, wallhack, radar hack and spoofer — before you open checkout from $35.',
     metaTitle: 'PUBG Cheat Features Checklist | Aimbot ESP Radar',
     metaDescription:
-      'PUBG hack features checklist: silent aim Aimbot, player ESP, loot ESP, wallhack, radar hack and spoofer on pubghacks.org from $35. Compare modules before you buy.',
+      'PUBG hack features checklist: silent aim Aimbot, player ESP, loot ESP, wallhack, radar hack and spoofer on pubghack.net from $35. Compare modules before you buy.',
     searchTerms: 'pubg hack features checklist pubg hacks aimbot esp wallhack radar hack',
     date: '2026-09-17',
     readMinutes: 8,
@@ -40,7 +40,7 @@ export const BLOGS: BlogPost[] = [
         heading: 'Use this checklist before checkout',
         body: [
           'Searching “pubg hacks” or “pubg hack” usually means one question: what is actually included? This guide is the module checklist — not the price page. Open Product details for live BattlEye status and checkout from $35.',
-          'PUBG Hacks on pubghacks.org is a single PUBG PC product for Windows PC: one loader, one license, clear-to-load or Updating against BattlEye. Official and many modded custom matches are supported when the build allows it.',
+          'PUBG Hacks on pubghack.net is a single PUBG PC product for Windows PC: one loader, one license, clear-to-load or Updating against BattlEye. Official and many modded custom matches are supported when the build allows it.',
         ],
       },
       {
@@ -115,7 +115,7 @@ export const BLOGS: BlogPost[] = [
         heading: 'Save loot-run and PvP configs',
         body: [
           'For quiet gearing, keep Aimbot mild or off and lean on player ESP, loot ESP and radar. For contested military loot, add slight assist without snap behaviour.',
-          'Save a “loot run” and a “PvP” config. Licenses for PUBG hacks start from $35 on pubghacks.org.',
+          'Save a “loot run” and a “PvP” config. Licenses for PUBG hacks start from $35 on pubghack.net.',
         ],
       },
     ],
@@ -217,7 +217,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'After a clean load',
         body: [
-          'Buy PUBG Hacks on pubghacks.org (from $35), confirm live BattlEye status, launch PUBG, run the loader, then open the menu with the key in your delivery notes.',
+          'Buy PUBG Hacks on pubghack.net (from $35), confirm live BattlEye status, launch PUBG, run the loader, then open the menu with the key in your delivery notes.',
           'If the menu does not open, do not spam keys — contact support with your order ID.',
         ],
       },
@@ -253,7 +253,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: '1) Buy and confirm status',
         body: [
-          'Open pubghacks.org. If status is Updating after a BattlEye patch, wait. If status is clear, checkout from $35 and use only the official delivery link.',
+          'Open pubghack.net. If status is Updating after a BattlEye patch, wait. If status is clear, checkout from $35 and use only the official delivery link.',
         ],
       },
       {
@@ -332,7 +332,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'Why loaders get flagged',
         body: [
-          'Cheat loaders often trip generic heuristics even from a legitimate pubghacks.org purchase. Exclusion comes before you spam launch into PUBG.',
+          'Cheat loaders often trip generic heuristics even from a legitimate pubghack.net purchase. Exclusion comes before you spam launch into PUBG.',
         ],
       },
       {
@@ -401,7 +401,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'Status is part of the product',
         body: [
-          'BattlEye updates can invalidate a build overnight. pubghacks.org shows clear-to-load or Updating so you are not buying a dead loader from a Discord screenshot.',
+          'BattlEye updates can invalidate a build overnight. pubghack.net shows clear-to-load or Updating so you are not buying a dead loader from a Discord screenshot.',
           'Licenses start from $35 — honest status beats fake always-safe marketing against BattlEye.',
         ],
       },
@@ -499,7 +499,7 @@ export const BLOGS: BlogPost[] = [
     slug: 'undetected-pubg-hacks-2026',
     title: 'Undetected PUBG Hacks 2026 ? Status, Aimbot & ESP',
     excerpt:
-      'How undetected PUBG hacks 2026 status works on pubghacks.org ? BattlEye updates, best PUBG cheats undetected practices and when to wait before download.',
+      'How undetected PUBG hacks 2026 status works on pubghack.net ? BattlEye updates, best PUBG cheats undetected practices and when to wait before download.',
     metaTitle: 'Undetected PUBG Hacks 2026 | Best Cheats & Status Guide',
     metaDescription:
       'Undetected PUBG hacks 2026 explained: live status, PUBG aimbot, PUBG ESP, wallhack, radar hack PC and private Battlegrounds hacks vs free paste risks.',
@@ -512,7 +512,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'What ?undetected? means in 2026',
         body: [
-          'Undetected PUBG hacks 2026 does not mean forever safe ? it means the current build is clear to load against BattlEye until the next patch. pubghacks.org publishes that label so you are not loading blind.',
+          'Undetected PUBG hacks 2026 does not mean forever safe ? it means the current build is clear to load against BattlEye until the next patch. pubghack.net publishes that label so you are not loading blind.',
           'Best PUBG cheats undetected setups combine conservative PUBG aimbot FOV, player ESP and radar cheat ? not rage settings that get reported on killcam.',
         ],
       },
@@ -542,7 +542,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'Steam vs Epic ? same PC build',
         body: [
-          'Whether you bought PlayerUnknown\'s Battlegrounds on Steam or Epic Games, the Windows client uses BattlEye. Follow Complete Setup after your pubghacks.org download ? one PUBG cheats license, one loader.',
+          'Whether you bought PlayerUnknown\'s Battlegrounds on Steam or Epic Games, the Windows client uses BattlEye. Follow Complete Setup after your pubghack.net download ? one PUBG cheats license, one loader.',
         ],
       },
       {
@@ -557,7 +557,7 @@ export const BLOGS: BlogPost[] = [
     slug: 'pubg-mobile-hacks-keywords',
     title: 'PUBG Mobile Hacks vs PUBG PC Cheats',
     excerpt:
-      'Why PUBG mobile hacks download searches differ from PUBG PC ? Android/iOS mod menus vs Steam/Epic Battlegrounds hacks on pubghacks.org.',
+      'Why PUBG mobile hacks download searches differ from PUBG PC ? Android/iOS mod menus vs Steam/Epic Battlegrounds hacks on pubghack.net.',
     metaTitle: 'PUBG Mobile Hacks & Mods vs PC | Aimbot, ESP Explained',
     metaDescription:
       'PUBG mobile hacks download and mod menu searches vs PUBG PC cheats. Player ESP, loot ESP, aimbot and anti-cheat bypass context for PlayerUnknown\'s Battlegrounds on Windows.',
@@ -570,7 +570,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'Mobile vs PC',
         body: [
-          'PUBG Mobile Hacks & Mods on Android/iOS are a different ecosystem with different anti-cheat. pubghacks.org sells PUBG PC hacks only ? PUBG aimbot, PUBG wallhack, player ESP and radar hack PC for Steam/Epic.',
+          'PUBG Mobile Hacks & Mods on Android/iOS are a different ecosystem with different anti-cheat. pubghack.net sells PUBG PC hacks only ? PUBG aimbot, PUBG wallhack, player ESP and radar hack PC for Steam/Epic.',
         ],
       },
       {
@@ -588,7 +588,7 @@ export const BLOGS: BlogPost[] = [
       'Tour the PUBG mod menu: aimbot, wallhack, ESP, radar cheat, stream-proof, private PUBG cheat HWID spoofer and game enhancement tools in one loader.',
     metaTitle: 'PUBG Mod Menu Guide | HWID Spoofer, ESP, Aimbot',
     metaDescription:
-      'Private PUBG cheat with HWID spoofer, PUBG mod menu toggles, player ESP, loot ESP, radar cheat, PUBG wallhack and anti-cheat status workflow on pubghacks.org.',
+      'Private PUBG cheat with HWID spoofer, PUBG mod menu toggles, player ESP, loot ESP, radar cheat, PUBG wallhack and anti-cheat status workflow on pubghack.net.',
     searchTerms:
       'pubg mod menu private pubg cheat hwid spoofer pubg wallhack esp aimbot game enhancement tools',
     date: '2026-03-01',
@@ -633,7 +633,7 @@ export const BLOGS: BlogPost[] = [
         heading: 'Common fixes',
         body: [
           'Restore quarantined files, confirm folder exclusion, close overlays, reboot once, then try one clean load with PUBG running from the official launcher.',
-          'Do not run random “fix DLL” downloads elsewhere — support only covers official delivery from pubghacks.org.',
+          'Do not run random “fix DLL” downloads elsewhere — support only covers official delivery from pubghack.net.',
         ],
       },
       {

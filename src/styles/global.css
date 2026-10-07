@@ -540,3 +540,85 @@ a:hover .game-cover-img:not(.game-cover-img--color) {
     min-height: 0;
   }
 }
+
+/* ——— Full-screen PUBG live wallpaper hero ——— */
+.hero-banner--live {
+  min-height: 100svh;
+  min-height: 100dvh;
+}
+
+.hero-live-wallpaper__video {
+  z-index: 0;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate3d(0, 0, 0) scale(1);
+  object-position: center center;
+  filter: saturate(1.12) contrast(1.12) brightness(0.98);
+  backface-visibility: hidden;
+  animation: hero-live-drift 28s ease-in-out infinite alternate;
+}
+
+.hero-live-wallpaper__shade {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background:
+    linear-gradient(90deg, rgba(8, 6, 15, 0.62) 0%, rgba(8, 6, 15, 0.22) 38%, transparent 62%),
+    linear-gradient(180deg, rgba(8, 6, 15, 0.35) 0%, transparent 28%);
+  pointer-events: none;
+}
+
+.hero-live-wallpaper__vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: radial-gradient(
+    ellipse 90% 80% at 50% 50%,
+    transparent 45%,
+    rgba(8, 6, 15, 0.45) 100%
+  );
+  pointer-events: none;
+}
+
+.hero-live-wallpaper__bottom-fade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+  height: 28%;
+  background: linear-gradient(to top, rgba(8, 6, 15, 0.88) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.hero-banner--live h1,
+.hero-banner--live p {
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.75);
+}
+
+.hero-glass-panel {
+  background: linear-gradient(145deg, rgba(20, 16, 36, 0.72), rgba(12, 10, 22, 0.55));
+  box-shadow:
+    0 0 0 1px rgba(167, 139, 250, 0.12) inset,
+    0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
+.hero-banner--live .nav-chip {
+  background: rgba(0, 0, 0, 0.35);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+@keyframes hero-live-drift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    transform: translate3d(-0.6%, -0.4%, 0) scale(1.02);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-live-wallpaper__video {
+    animation: none;
+  }
+}

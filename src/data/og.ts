@@ -1,6 +1,6 @@
 /**
  * Canonical 1200x630 JPEG Open Graph images for Google SERP thumbnails.
- * Every indexed URL maps to a unique crawlable /og/*.jpg under pubghacks.org.
+ * Every indexed URL maps to a unique crawlable /og/*.jpg under pubghack.net.
  */
 
 export const OG_HOME = '/og/home.jpg'

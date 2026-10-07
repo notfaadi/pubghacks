@@ -32,4 +32,4 @@ Allow: /videos/
 Disallow: /404
 Disallow: /404.html
 
-Sitemap: https://pubghacks.org/sitemap.xml
+Sitemap: https://pubghack.net/sitemap.xml

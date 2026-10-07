@@ -17,7 +17,7 @@ type NavbarProps = {
   onVideo?: boolean
 }
 
-export function Navbar({ onVideo: _onVideo = false }: NavbarProps) {
+export function Navbar({ onVideo = false }: NavbarProps) {
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
@@ -27,7 +27,13 @@ export function Navbar({ onVideo: _onVideo = false }: NavbarProps) {
     }
   }, [menuOpen])
 
-  const brandClass = 'text-z-ink'
+  const brandClass = onVideo ? 'text-white' : 'text-z-ink'
+  const navLinkClass = onVideo
+    ? 'text-white/75 hover:bg-white/10 hover:text-white'
+    : 'text-z-ink/70 hover:bg-z-accent/15 hover:text-z-ink'
+  const menuBtnClass = onVideo
+    ? 'border-white/20 bg-black/40 text-white backdrop-blur-lg'
+    : 'border-z-soft/25 bg-z-elevated/80 text-z-ink backdrop-blur-lg'
 
   return (
     <>
@@ -45,7 +51,7 @@ export function Navbar({ onVideo: _onVideo = false }: NavbarProps) {
               <a
                 key={link.label}
                 href={link.to}
-                className="inline-flex items-center rounded-full px-3.5 py-1.5 text-sm font-medium text-z-ink/70 transition-colors hover:bg-z-accent/15 hover:text-z-ink"
+                className={`inline-flex items-center rounded-full px-3.5 py-1.5 text-sm font-medium transition-colors ${navLinkClass}`}
               >
                 {link.label}
               </a>
@@ -60,7 +66,7 @@ export function Navbar({ onVideo: _onVideo = false }: NavbarProps) {
           type="button"
           aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           onClick={() => setMenuOpen((v) => !v)}
-          className="relative z-50 flex h-10 w-10 items-center justify-center rounded-full border border-z-soft/25 bg-z-elevated/80 text-z-ink backdrop-blur-lg md:hidden"
+          className={`relative z-50 flex h-10 w-10 items-center justify-center rounded-full md:hidden ${menuBtnClass}`}
         >
           <Menu
             className={`absolute h-5 w-5 transition-all duration-300 ${brandClass} ${

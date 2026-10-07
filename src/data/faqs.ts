@@ -7,15 +7,15 @@ export type FaqItem = {
 export const SITE_FAQS: FaqItem[] = [
   {
     q: 'What are PUBG Hacks?',
-    a: 'PUBG Hacks are PUBG PC tools on pubghacks.org � silent-aim Aimbot, player ESP, wallhack, vehicle and loot ESP, and a 2D radar hack � with live BattlEye status after game patches.',
+    a: 'PUBG Hacks are PUBG PC tools on pubghack.net � silent-aim Aimbot, player ESP, wallhack, vehicle and loot ESP, and a 2D radar hack � with live BattlEye status after game patches.',
   },
   {
     q: 'How much do PUBG hacks cost?',
-    a: `PUBG hacks start from $35 for short access. Longer licenses cost more. Always confirm live BattlEye status and the price on pubghacks.org before checkout.`,
+    a: `PUBG hacks start from $35 for short access. Longer licenses cost more. Always confirm live BattlEye status and the price on pubghack.net before checkout.`,
   },
   {
     q: 'Do you sell PUBG hacks for other games?',
-    a: 'No. pubghacks.org sells PUBG hacks / PUBG hacks only � one product, no multi-game catalog.',
+    a: 'No. pubghack.net sells PUBG hacks / PUBG hacks only � one product, no multi-game catalog.',
   },
   {
     q: 'Is Aimbot the main feature?',
@@ -23,7 +23,7 @@ export const SITE_FAQS: FaqItem[] = [
   },
   {
     q: 'How do you handle BattlEye updates?',
-    a: 'We publish live clear-to-load or Updating labels after PUBG and BattlEye patches. Always check status on pubghacks.org before you load.',
+    a: 'We publish live clear-to-load or Updating labels after PUBG and BattlEye patches. Always check status on pubghack.net before you load.',
   },
   {
     q: 'What is PUBG ESP / wallhack?',
@@ -67,7 +67,7 @@ export const SITE_FAQS: FaqItem[] = [
   },
   {
     q: 'Are these undetected PUBG hacks for 2026?',
-    a: 'pubghacks.org tracks undetected PUBG hacks status with clear-to-load or Updating labels after BattlEye patches. No cheat is permanent — always check status before load and use conservative PUBG aimbot and ESP settings.',
+    a: 'pubghack.net tracks undetected PUBG hacks status with clear-to-load or Updating labels after BattlEye patches. No cheat is permanent — always check status before load and use conservative PUBG aimbot and ESP settings.',
   },
   {
     q: 'Do you offer PUBG mobile hacks download for Android or iOS?',
@@ -75,7 +75,7 @@ export const SITE_FAQS: FaqItem[] = [
   },
   {
     q: 'Is there a free PUBG aimbot with no ban risk?',
-    a: 'There is no legitimate free PUBG aimbot with zero ban risk. Random free downloads often steal accounts or trigger instant BattlEye bans. Licensed PUBG cheats from $35 on pubghacks.org include support, updates and honest status — not “free” cracks.',
+    a: 'There is no legitimate free PUBG aimbot with zero ban risk. Random free downloads often steal accounts or trigger instant BattlEye bans. Licensed PUBG cheats from $35 on pubghack.net include support, updates and honest status — not “free” cracks.',
   },
   {
     q: 'What is the best PUBG radar hack for PC?',
@@ -91,7 +91,7 @@ export const SITE_FAQS: FaqItem[] = [
   },
   {
     q: 'Is there a PUBG speed hack download?',
-    a: 'Speed-style features are not marketed as a primary module. Searching PUBG speed hack download often leads to malware — use only the official loader from your pubghacks.org order after status is clear.',
+    a: 'Speed-style features are not marketed as a primary module. Searching PUBG speed hack download often leads to malware — use only the official loader from your pubghack.net order after status is clear.',
   },
   {
     q: 'Does the PUBG hack work on Steam and Epic Games?',
@@ -115,7 +115,7 @@ export const SITE_FAQS: FaqItem[] = [
   },
   {
     q: 'Do you cover Battlegrounds hacks and battle royale cheats only?',
-    a: 'Yes. pubghacks.org is PlayerUnknown\'s Battlegrounds only — Battlegrounds hacks for PC, not a multi-game cheat mall.',
+    a: 'Yes. pubghack.net is PlayerUnknown\'s Battlegrounds only — Battlegrounds hacks for PC, not a multi-game cheat mall.',
   },
   {
     q: 'What are player ESP and loot ESP?',

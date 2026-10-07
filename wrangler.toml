@@ -10,11 +10,11 @@ compatibility_date = "2026-09-12"
 command = "npm run build"
 
 [[routes]]
-pattern = "pubghacks.org"
+pattern = "pubghack.net"
 custom_domain = true
 
 [[routes]]
-pattern = "www.pubghacks.org"
+pattern = "www.pubghack.net"
 custom_domain = true
 
 [assets]

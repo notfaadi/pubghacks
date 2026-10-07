@@ -2,14 +2,14 @@ import { PUBG_OG } from './images'
 import { PAGE_OG } from './og'
 import { SEO_KEYWORDS_ALL } from './seo-keywords'
 
-export const SITE_URL = 'https://pubghacks.org'
+export const SITE_URL = 'https://pubghack.net'
 export const SITE_NAME = 'PUBG Hacks'
-export const SITE_HOST = 'pubghacks.org'
+export const SITE_HOST = 'pubghack.net'
 
 /**
  * Sole purpose — used in schema + about copy.
  * Single-product site: PUBG / PUBG PC hacks for PC (worldwide).
- * Canonical host is apex https://pubghacks.org (www 301s to apex in the Worker).
+ * Canonical host is apex https://pubghack.net (www 301s to apex in the Worker).
  */
 export const SITE_PURPOSE =
   'Premium PUBG hacks and PUBG cheats for PlayerUnknown\'s Battlegrounds on Windows PC — undetected-style Aimbot, player ESP, loot ESP, wallhack, PUBG radar hack PC, mod menu tools, HWID spoofer options and live BattlEye status with instant digital download after checkout.'
@@ -44,7 +44,7 @@ export const SEO = {
   home: {
     title: 'Undetected PUBG Hacks & Cheats 2026 | Aimbot, ESP, Wallhack Download',
     description:
-      'Get undetected PUBG hacks for PC: PUBG aimbot, PUBG ESP, wallhack, radar hack, loot ESP, recoil control and mod menu features. Private Battlegrounds hacks with HWID spoofer support. Works on Steam & Epic — download via pubghacks.org.',
+      'Get undetected PUBG hacks for PC: PUBG aimbot, PUBG ESP, wallhack, radar hack, loot ESP, recoil control and mod menu features. Private Battlegrounds hacks with HWID spoofer support. Works on Steam & Epic — download via pubghack.net.',
     path: '/',
     ogType: 'website',
     image: PAGE_OG.home,
@@ -84,7 +84,7 @@ export const SEO = {
   support: {
     title: 'PUBG Hacks Support | Loader, Download & Mod Menu Help',
     description:
-      'Support for PUBG hack download, loader errors, mod menu setup, game enhancement tools and delivery — 24/7 help for pubghacks.org buyers on Windows PC.',
+      'Support for PUBG hack download, loader errors, mod menu setup, game enhancement tools and delivery — 24/7 help for pubghack.net buyers on Windows PC.',
     path: '/support',
     ogType: 'website',
     image: PAGE_OG.support,

@@ -21,13 +21,12 @@ export const PUBG_CONTROL = '/media/dayz-control-art.jpg'
 export const PUBG_TACTICAL = '/media/dayz-tactical-art.jpg'
 export const PUBG_VIDEO_THUMB = '/media/dayz-video-thumb.jpg'
 
-/** Self-hosted PUBG Reaper preview (Bunny Stream GUID ee0735e7-…). */
+/** Self-hosted PUBG live wallpaper (hero + product preview). */
 export const PUBG_HOME_VIDEO = {
-  id: 'ee0735e7-c9a3-4072-b818-98e2bb7f07ff',
-  src: '/videos/dayz-preview.mp4',
-  poster: PUBG_VIDEO_THUMB,
-  title: 'PUBG Hacks Aimbot and ESP preview',
-  caption: 'Preview of PUBG Aimbot, ESP menu, loot highlighting and radar hack features on PC.',
+  src: '/videos/pubg-hero-live.mp4',
+  poster: PUBG_HERO,
+  title: 'PUBG Hacks — live PUBG wallpaper preview',
+  caption: 'PUBG PC gameplay background for PUBG Aimbot, ESP, wallhack and radar hack overview.',
 } as const
 
 export const PAGE_MEDIA = {

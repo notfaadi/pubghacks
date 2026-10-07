@@ -72,7 +72,7 @@ function overlaySvg(width, height, eyebrow, title, subtitle) {
         )
         .join('\n')}
       <text x="64" y="480" fill="#c9bdd2" font-size="26" font-family="Arial, sans-serif">${escapeXml(subtitle)}</text>
-      <text x="64" y="560" fill="#9299a3" font-size="20" font-family="Arial, sans-serif">pubghacks.org</text>
+      <text x="64" y="560" fill="#9299a3" font-size="20" font-family="Arial, sans-serif">pubghack.net</text>
     </svg>
   `)
 }
@@ -159,7 +159,7 @@ const staticOg = [
     source: heroFull,
     eyebrow: 'POLICY',
     title: 'Privacy Policy',
-    subtitle: 'How pubghacks.org handles order data',
+    subtitle: 'How pubghack.net handles order data',
   },
   {
     file: 'terms.jpg',
@@ -193,7 +193,7 @@ if (!forums.length) {
     forums.push({
       slug,
       title: `PUBG Hacks ${slug}`,
-      description: 'PUBG hacks guide on pubghacks.org',
+      description: 'PUBG hacks guide on pubghack.net',
     })
   }
 }
@@ -212,7 +212,7 @@ for (const forum of forums) {
     source,
     'DAYZ GUIDE',
     forum.title.replace(/\s*\|\s*.*$/, '').slice(0, 48),
-    'PUBG hacks · pubghacks.org',
+    'PUBG hacks · pubghack.net',
   )
   created.push(file)
 }
@@ -238,7 +238,7 @@ function fillerSvg(width, height, eyebrow, title, subtitle) {
 for (const [name, eyebrow, title, subtitle] of [
   ['dayz-tactical-art.jpg', 'DAYZ STANDALONE', 'PUBG Hacks', 'Aimbot · ESP · Loot ESP · BattlEye'],
   ['dayz-control-art.jpg', 'DAYZ · WINDOWS PC', 'PUBG ESP & Radar', 'Built for PUBG ranked runs'],
-  ['dayz-home-art.jpg', 'pubghacks.org', 'PUBG Hacks', 'Aimbot, ESP, wallhack and radar hack'],
+  ['dayz-home-art.jpg', 'pubghack.net', 'PUBG Hacks', 'Aimbot, ESP, wallhack and radar hack'],
 ]) {
   const path = join(mediaDir, name)
   if (

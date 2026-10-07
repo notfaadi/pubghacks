@@ -3,7 +3,7 @@ import { join, relative } from 'node:path'
 
 const root = join(import.meta.dirname, '..')
 const dist = join(root, 'dist')
-const site = 'https://pubghacks.org'
+const site = 'https://pubghack.net'
 const failures = []
 
 function fail(message) {
@@ -99,7 +99,7 @@ for (const [name, html] of [
   ['product', product],
   ['reviews', reviews],
 ]) {
-  if (!html.includes('"@id":"https://pubghacks.org/#product"')) {
+  if (!html.includes('"@id":"https://pubghack.net/#product"')) {
     fail(`${name}: missing shared Product ID`)
   }
 }
@@ -137,8 +137,8 @@ for (const file of files) {
   const twImage = html.match(/<meta name="twitter:image" content="([^"]+)"/)?.[1]
   const robotsMeta = html.match(/<meta name="robots" content="([^"]+)"/)?.[1]
 
-  if (!ogImage?.startsWith('https://pubghacks.org/og/') || !ogImage.endsWith('.jpg')) {
-    fail(`${page}: og:image must be https://pubghacks.org/og/*.jpg for SERP thumbnails`)
+  if (!ogImage?.startsWith('https://pubghack.net/og/') || !ogImage.endsWith('.jpg')) {
+    fail(`${page}: og:image must be https://pubghack.net/og/*.jpg for SERP thumbnails`)
   }
   if (!twImage || twImage !== ogImage) {
     fail(`${page}: twitter:image must match og:image`)
@@ -176,7 +176,7 @@ for (const [name, html, og] of [
     fail(`${name}: missing Open Graph image ${og}`)
   }
 }
-if (!product.includes('/videos/dayz-preview.mp4') || !product.includes('/media/dayz-video-thumb.jpg')) {
+if (!product.includes('/videos/pubg-hero-live.mp4') || !product.includes('/media/dayz-video-thumb.jpg')) {
   fail('Product page is missing the self-hosted PUBG preview video')
 }
 if (home.includes('iframe.mediadelivery.net') || product.includes('iframe.mediadelivery.net')) {
@@ -193,10 +193,10 @@ if (
 const sitemap = readFileSync(join(dist, 'sitemap.xml'), 'utf8')
 if (sitemap.includes('<sitemapindex')) fail('sitemap.xml must be a single urlset, not an index')
 if (/forums\/(instructions|how-to-load)/.test(sitemap)) fail('Retired forum remains in sitemap.xml')
-if (!sitemap.includes('https://pubghacks.org/')) {
-  fail('sitemap.xml must use https://pubghacks.org URLs')
+if (!sitemap.includes('https://pubghack.net/')) {
+  fail('sitemap.xml must use https://pubghack.net URLs')
 }
-if (!sitemap.includes('/videos/dayz-preview.mp4')) {
+if (!sitemap.includes('/videos/pubg-hero-live.mp4')) {
   fail('sitemap.xml missing PUBG preview video entry')
 }
 if (!sitemap.includes('xmlns:video=')) {
@@ -276,7 +276,7 @@ if (!existsSync(join(dist, 'robots.txt'))) fail('dist/robots.txt is missing')
 if (!existsSync(join(dist, '_routes.json'))) fail('dist/_routes.json is missing')
 
 const robots = readFileSync(join(dist, 'robots.txt'), 'utf8')
-if (!robots.includes('Sitemap: https://pubghacks.org/sitemap.xml')) {
+if (!robots.includes('Sitemap: https://pubghack.net/sitemap.xml')) {
   fail('robots.txt must point at the canonical HTTPS sitemap')
 }
 if (!robots.includes('Allow: /sitemap.xml')) {
@@ -307,7 +307,7 @@ for (const asset of [
   'public/media/dayz-esp-gameplay.gif',
   'public/media/dayz-menu.gif',
   'public/media/dayz-video-thumb.jpg',
-  'public/videos/dayz-preview.mp4',
+  'public/videos/pubg-hero-live.mp4',
   'public/sitemap.css',
   'public/_routes.json',
   'functions/_middleware.js',

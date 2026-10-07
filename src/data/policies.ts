@@ -20,10 +20,10 @@ export const POLICY_PAGES: PolicyPageContent[] = [
     path: '/privacy',
     title: 'Privacy Policy | PUBG Hacks PC',
     description:
-      'How pubghacks.org handles order details, delivery email, support messages and basic site analytics for PUBG hacks.',
+      'How pubghack.net handles order details, delivery email, support messages and basic site analytics for PUBG hacks.',
     h1: 'PUBG Hacks Privacy Policy',
     intro:
-      'This page explains what we collect when you browse pubghacks.org, buy a PUBG Hacks license, or contact support � and what we do not collect.',
+      'This page explains what we collect when you browse pubghack.net, buy a PUBG Hacks license, or contact support � and what we do not collect.',
     sections: [
       {
         heading: 'What we collect',
@@ -45,8 +45,8 @@ export const POLICY_PAGES: PolicyPageContent[] = [
         heading: 'Cookies and third parties',
         body: [
           'Essential cookies may be set by checkout or CDN providers so payment and delivery work.',
-          'Preview media is hosted on pubghacks.org. Third-party embeds are not used for the main product preview.',
-          'Official PUBG and Krafton links are external. Their privacy policies apply once you leave pubghacks.org.',
+          'Preview media is hosted on pubghack.net. Third-party embeds are not used for the main product preview.',
+          'Official PUBG and Krafton links are external. Their privacy policies apply once you leave pubghack.net.',
         ],
       },
       {
@@ -68,7 +68,7 @@ export const POLICY_PAGES: PolicyPageContent[] = [
     path: '/terms',
     title: 'Terms of Use | PUBG Hacks PC',
     description:
-      'License rules, age limits, BattlEye risk, and liability limits for PUBG hacks on pubghacks.org.',
+      'License rules, age limits, BattlEye risk, and liability limits for PUBG hacks on pubghack.net.',
     h1: 'PUBG Hacks Terms of Use',
     intro:
       'Buying or running PUBG Hacks means you accept these terms. A license covers personal use of Aimbot, ESP, wallhack, loot ESP and radar tools for PUBG PC on Windows PC � nothing beyond that.',
@@ -115,7 +115,7 @@ export const POLICY_PAGES: PolicyPageContent[] = [
     path: '/refunds',
     title: 'Refund Policy | PUBG Hacks PC',
     description:
-      'When PUBG Hacks refunds apply for digital PUBG licenses, delivery failures, and Updating status windows on pubghacks.org.',
+      'When PUBG Hacks refunds apply for digital PUBG licenses, delivery failures, and Updating status windows on pubghack.net.',
     h1: 'PUBG Hacks Refund Policy',
     intro:
       'PUBG Hacks licenses are digital goods. This page covers when we can refund, when we cannot, and how to open a request with your order ID.',

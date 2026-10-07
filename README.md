@@ -1,4 +1,4 @@
-# PUBG Hacks (pubghacks.org)
+# PUBG Hacks (pubghack.net)
 
 Static Astro site for PUBG PC cheats — silent aim Aimbot, ESP, wallhack, loot ESP, radar hack — Cloudflare Workers ready.
 

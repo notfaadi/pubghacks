@@ -59,13 +59,16 @@ const preloadOg =
       <link rel="preload" as="image" href={imageUrl} type={imageType} fetchpriority="high" />
     ) : null}
     {isHome ? (
-      <link
-        rel="preload"
-        as="image"
-        href="/media/dayz-hero-full.webp"
-        type="image/webp"
-        fetchpriority="high"
-      />
+      <>
+        <link
+          rel="preload"
+          as="image"
+          href="/media/dayz-hero-full.webp"
+          type="image/webp"
+          fetchpriority="high"
+        />
+        <link rel="preload" as="video" href="/videos/pubg-hero-live.mp4" type="video/mp4" />
+      </>
     ) : null}
 
     <title>{seo.title}</title>
