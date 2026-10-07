@@ -14,28 +14,18 @@ const SITE = (process.env.SITE_URL || 'https://pubghack.net').replace(/\/$/, '')
 const TODAY = new Date().toLocaleDateString('en-CA')
 const HREFLANG = ['en', 'x-default']
 
-const HERO_FULL = '/media/dayz-hero-full.webp'
-const COVER = '/media/dayz-cover.webp'
-const BOX = '/media/dayz-box.jpg'
-const ESP = '/media/dayz-esp-gameplay.gif'
-const MENU = '/media/dayz-menu.gif'
-const CONTROL = '/media/dayz-control-art.jpg'
+const PUBG_POSTER = '/media/pubg-hero-poster.jpg'
 const HOME_ART = '/media/dayz-home-art.jpg'
+const CONTROL = '/media/dayz-control-art.jpg'
 const TACTICAL_ART = '/media/dayz-tactical-art.jpg'
-const VIDEO_THUMB = '/media/dayz-video-thumb.jpg'
 const PREVIEW_VIDEO = '/videos/pubg-hero-live.mp4'
 const OG_DEFAULT = '/og/pubg-hacks.jpg'
 
 const ALL_SITE_IMAGES = [
-  HERO_FULL,
-  COVER,
-  BOX,
-  ESP,
-  MENU,
-  CONTROL,
+  PUBG_POSTER,
   HOME_ART,
+  CONTROL,
   TACTICAL_ART,
-  VIDEO_THUMB,
   '/og/home.jpg',
   '/og/pubg-hacks-social.jpg',
   '/og/pubg-hacks.jpg',
@@ -49,23 +39,23 @@ const ALL_SITE_IMAGES = [
 ]
 
 const FORUM_IMAGES = {
-  'features-list': COVER,
-  hotkeys: MENU,
-  'complete-setup': HERO_FULL,
+  'features-list': PUBG_POSTER,
+  hotkeys: PUBG_POSTER,
+  'complete-setup': PUBG_POSTER,
   'disable-antivirus': CONTROL,
-  'undetected-status': COVER,
-  'aimbot-settings': MENU,
-  'esp-wallhack-guide': ESP,
-  'radar-hack-guide': MENU,
+  'undetected-status': PUBG_POSTER,
+  'aimbot-settings': PUBG_POSTER,
+  'esp-wallhack-guide': PUBG_POSTER,
+  'radar-hack-guide': PUBG_POSTER,
   'stream-proof-setup': HOME_ART,
-  'battleye-status': COVER,
-  'windows-setup': HERO_FULL,
-  'raid-play-guide': BOX,
+  'battleye-status': PUBG_POSTER,
+  'windows-setup': PUBG_POSTER,
+  'raid-play-guide': PUBG_POSTER,
   'loader-errors': TACTICAL_ART,
-  'undetected-pubg-hacks-2026': COVER,
-  'pubg-steam-epic-hacks': HERO_FULL,
-  'pubg-mobile-hacks-keywords': MENU,
-  'pubg-mod-menu-spoofer': COVER,
+  'undetected-pubg-hacks-2026': PUBG_POSTER,
+  'pubg-steam-epic-hacks': PUBG_POSTER,
+  'pubg-mobile-hacks-keywords': PUBG_POSTER,
+  'pubg-mod-menu-spoofer': PUBG_POSTER,
 }
 
 const PAGE_META = {
@@ -187,19 +177,14 @@ function imagesForPath(path, games, forums) {
         caption: 'Legacy homepage share image for pubghack.net.',
       },
       {
-        src: HERO_FULL,
+        src: PUBG_POSTER,
         title: 'PUBG Hacks Hero',
-        caption: 'Buy PUBG hacks - PUBG Aimbot, ESP and radar hack hero artwork for PC.',
+        caption: 'PUBG Aimbot, ESP and radar hack hero artwork for PC.',
       },
       {
-        src: COVER,
-        title: 'PUBG Hacks Product Cover',
-        caption: 'PUBG hacks product cover for checkout and social previews.',
-      },
-      {
-        src: VIDEO_THUMB,
-        title: 'PUBG Hacks Preview Thumbnail',
-        caption: 'Thumbnail for the PUBG Aimbot and ESP preview video.',
+        src: PREVIEW_VIDEO,
+        title: 'PUBG Hacks Live Wallpaper Preview',
+        caption: 'Self-hosted PUBG gameplay video for the homepage hero.',
       },
       {
         src: OG_DEFAULT,
@@ -218,29 +203,14 @@ function imagesForPath(path, games, forums) {
         caption: 'Google and social preview for the PUBG hacks product page.',
       },
       {
-        src: COVER,
+        src: PUBG_POSTER,
         title: 'PUBG Aimbot ESP Product Artwork',
         caption: 'Product features, compatibility, status and price before checkout.',
       },
       {
-        src: HERO_FULL,
-        title: `${game.name} Cheats Product Hero`,
-        caption: `Hero artwork for ${game.name} Aimbot, ESP and radar hack product details.`,
-      },
-      {
-        src: MENU,
-        title: `${game.name} Cheats Menu Preview`,
-        caption: `Menu and Aimbot settings preview for ${game.name} cheats.`,
-      },
-      {
-        src: ESP,
-        title: `${game.name} ESP Gameplay`,
-        caption: `Player ESP and wallhack preview for ${game.name}.`,
-      },
-      {
-        src: VIDEO_THUMB,
-        title: 'PUBG Hacks Preview Thumbnail',
-        caption: 'Thumbnail for the PUBG hacks preview video.',
+        src: PREVIEW_VIDEO,
+        title: 'PUBG Hacks Preview Video',
+        caption: `Live PUBG wallpaper preview for ${game.name} product details.`,
       },
     ]
   }
@@ -253,9 +223,9 @@ function imagesForPath(path, games, forums) {
         caption: 'Google preview image for the PUBG Hacks guides index.',
       },
       {
-        src: MENU,
-        title: 'PUBG Hacks Forum Artwork',
-        caption: 'Artwork reference for PUBG setup and feature guides.',
+        src: PUBG_POSTER,
+        title: 'PUBG Hacks Forum Hero',
+        caption: 'PUBG hero artwork for setup and feature guides.',
       },
     ]
   }
@@ -272,7 +242,7 @@ function imagesForPath(path, games, forums) {
           `Google preview image for ${forum?.title || slug} on pubghack.net.`,
       },
       {
-        src: FORUM_IMAGES[slug] || MENU,
+        src: FORUM_IMAGES[slug] || PUBG_POSTER,
         title: `${forum?.title || slug} Artwork`,
         caption:
           forum?.excerpt ||
@@ -343,7 +313,7 @@ function videosForPath(path) {
   if (path === '/pubg-hacks') {
     return [
       {
-        thumb: VIDEO_THUMB,
+        thumb: PUBG_POSTER,
         title: 'PUBG Hacks Aimbot and ESP Preview',
         description:
           'Self-hosted PUBG hacks preview showing Aimbot, ESP menu and survival gameplay visuals on PC.',

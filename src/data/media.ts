@@ -8,19 +8,19 @@ export type SeoMediaItem = {
   videoDescription?: string
 }
 
-/** PUBG product art + menu stills (self-hosted). */
+/** PUBG product art (self-hosted — no legacy DayZ filenames in UI). */
 export const PUBG_HERO_POSTER = '/media/pubg-hero-poster.jpg'
-export const PUBG_HERO = '/media/dayz-hero-full.webp'
-export const PUBG_SOLDIER = '/media/dayz-hero-full.webp'
-export const PUBG_COVER = '/media/dayz-cover.webp'
-export const PUBG_BOX = '/media/dayz-box.jpg'
-export const PUBG_ESP = '/media/dayz-esp-gameplay.gif'
-export const PUBG_MENU = '/media/dayz-menu.gif'
-export const PUBG_GAMEPLAY = '/media/dayz-esp-gameplay.gif'
+export const PUBG_HERO = PUBG_HERO_POSTER
+export const PUBG_SOLDIER = PUBG_HERO_POSTER
+export const PUBG_COVER = PUBG_HERO_POSTER
+export const PUBG_BOX = PUBG_HERO_POSTER
+export const PUBG_ESP = PUBG_HERO_POSTER
+export const PUBG_MENU = PUBG_HERO_POSTER
+export const PUBG_GAMEPLAY = PUBG_HERO_POSTER
 export const PUBG_HOME_ART = '/media/dayz-home-art.jpg'
 export const PUBG_CONTROL = '/media/dayz-control-art.jpg'
 export const PUBG_TACTICAL = '/media/dayz-tactical-art.jpg'
-export const PUBG_VIDEO_THUMB = '/media/dayz-video-thumb.jpg'
+export const PUBG_VIDEO_THUMB = PUBG_HERO_POSTER
 
 /** Self-hosted PUBG live wallpaper (hero + product preview). */
 export const PUBG_HOME_VIDEO = {

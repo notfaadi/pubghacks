@@ -21,19 +21,14 @@
       <image:caption>Legacy homepage share image for pubghack.net.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-hero-full.webp</image:loc>
+      <image:loc>https://pubghack.net/media/pubg-hero-poster.jpg</image:loc>
       <image:title>PUBG Hacks Hero</image:title>
-      <image:caption>Buy PUBG hacks - PUBG Aimbot, ESP and radar hack hero artwork for PC.</image:caption>
+      <image:caption>PUBG Aimbot, ESP and radar hack hero artwork for PC.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-cover.webp</image:loc>
-      <image:title>PUBG Hacks Product Cover</image:title>
-      <image:caption>PUBG hacks product cover for checkout and social previews.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://pubghack.net/media/dayz-video-thumb.jpg</image:loc>
-      <image:title>PUBG Hacks Preview Thumbnail</image:title>
-      <image:caption>Thumbnail for the PUBG Aimbot and ESP preview video.</image:caption>
+      <image:loc>https://pubghack.net/videos/pubg-hero-live.mp4</image:loc>
+      <image:title>PUBG Hacks Live Wallpaper Preview</image:title>
+      <image:caption>Self-hosted PUBG gameplay video for the homepage hero.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://pubghack.net/og/pubg-hacks.jpg</image:loc>
@@ -54,7 +49,7 @@
       <image:caption>PUBG Hack for Steam &amp; Epic Games ? PC Setup</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-hero-full.webp</image:loc>
+      <image:loc>https://pubghack.net/media/pubg-hero-poster.jpg</image:loc>
       <image:title>PUBG Hack for Steam &amp; Epic Games ? PC Setup Artwork</image:title>
       <image:caption>PUBG Hack for Steam &amp; Epic Games ? PC Setup</image:caption>
     </image:image>
@@ -72,32 +67,17 @@
       <image:caption>Google and social preview for the PUBG hacks product page.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-cover.webp</image:loc>
+      <image:loc>https://pubghack.net/media/pubg-hero-poster.jpg</image:loc>
       <image:title>PUBG Aimbot ESP Product Artwork</image:title>
       <image:caption>Product features, compatibility, status and price before checkout.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-hero-full.webp</image:loc>
-      <image:title>PUBG Cheats Product Hero</image:title>
-      <image:caption>Hero artwork for PUBG Aimbot, ESP and radar hack product details.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://pubghack.net/media/dayz-menu.gif</image:loc>
-      <image:title>PUBG Cheats Menu Preview</image:title>
-      <image:caption>Menu and Aimbot settings preview for PUBG cheats.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://pubghack.net/media/dayz-esp-gameplay.gif</image:loc>
-      <image:title>PUBG ESP Gameplay</image:title>
-      <image:caption>Player ESP and wallhack preview for PUBG.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://pubghack.net/media/dayz-video-thumb.jpg</image:loc>
-      <image:title>PUBG Hacks Preview Thumbnail</image:title>
-      <image:caption>Thumbnail for the PUBG hacks preview video.</image:caption>
+      <image:loc>https://pubghack.net/videos/pubg-hero-live.mp4</image:loc>
+      <image:title>PUBG Hacks Preview Video</image:title>
+      <image:caption>Live PUBG wallpaper preview for PUBG product details.</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://pubghack.net/media/dayz-video-thumb.jpg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://pubghack.net/media/pubg-hero-poster.jpg</video:thumbnail_loc>
       <video:title>PUBG Hacks Aimbot and ESP Preview</video:title>
       <video:description>Self-hosted PUBG hacks preview showing Aimbot, ESP menu and survival gameplay visuals on PC.</video:description>
       <video:content_loc>https://pubghack.net/videos/pubg-hero-live.mp4</video:content_loc>
@@ -118,9 +98,9 @@
       <image:caption>Google preview image for the PUBG Hacks guides index.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-menu.gif</image:loc>
-      <image:title>PUBG Hacks Forum Artwork</image:title>
-      <image:caption>Artwork reference for PUBG setup and feature guides.</image:caption>
+      <image:loc>https://pubghack.net/media/pubg-hero-poster.jpg</image:loc>
+      <image:title>PUBG Hacks Forum Hero</image:title>
+      <image:caption>PUBG hero artwork for setup and feature guides.</image:caption>
     </image:image>
   </url>
   <url>
@@ -136,7 +116,7 @@
       <image:caption>PUBG Aimbot Settings for Silent Aim</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-menu.gif</image:loc>
+      <image:loc>https://pubghack.net/media/pubg-hero-poster.jpg</image:loc>
       <image:title>PUBG Aimbot Settings for Silent Aim Artwork</image:title>
       <image:caption>PUBG Aimbot Settings for Silent Aim</image:caption>
     </image:image>
@@ -154,7 +134,7 @@
       <image:caption>PUBG BattlEye Status: Clear to Load vs Updating</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-cover.webp</image:loc>
+      <image:loc>https://pubghack.net/media/pubg-hero-poster.jpg</image:loc>
       <image:title>PUBG BattlEye Status: Clear to Load vs Updating Artwork</image:title>
       <image:caption>PUBG BattlEye Status: Clear to Load vs Updating</image:caption>
     </image:image>
@@ -172,7 +152,7 @@
       <image:caption>Complete PUBG Hacks Setup</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-hero-full.webp</image:loc>
+      <image:loc>https://pubghack.net/media/pubg-hero-poster.jpg</image:loc>
       <image:title>Complete PUBG Hacks Setup Artwork</image:title>
       <image:caption>Complete PUBG Hacks Setup</image:caption>
     </image:image>
@@ -208,7 +188,7 @@
       <image:caption>PUBG ESP and Wallhack Setup</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-esp-gameplay.gif</image:loc>
+      <image:loc>https://pubghack.net/media/pubg-hero-poster.jpg</image:loc>
       <image:title>PUBG ESP and Wallhack Setup Artwork</image:title>
       <image:caption>PUBG ESP and Wallhack Setup</image:caption>
     </image:image>
@@ -226,7 +206,7 @@
       <image:caption>PUBG Cheat Features Checklist</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-cover.webp</image:loc>
+      <image:loc>https://pubghack.net/media/pubg-hero-poster.jpg</image:loc>
       <image:title>PUBG Cheat Features Checklist Artwork</image:title>
       <image:caption>PUBG Cheat Features Checklist</image:caption>
     </image:image>
@@ -244,7 +224,7 @@
       <image:caption>PUBG Hacks Hotkeys After Load</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-menu.gif</image:loc>
+      <image:loc>https://pubghack.net/media/pubg-hero-poster.jpg</image:loc>
       <image:title>PUBG Hacks Hotkeys After Load Artwork</image:title>
       <image:caption>PUBG Hacks Hotkeys After Load</image:caption>
     </image:image>
@@ -280,7 +260,7 @@
       <image:caption>PUBG Mobile Hacks vs PUBG PC Cheats</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-menu.gif</image:loc>
+      <image:loc>https://pubghack.net/media/pubg-hero-poster.jpg</image:loc>
       <image:title>PUBG Mobile Hacks vs PUBG PC Cheats Artwork</image:title>
       <image:caption>PUBG Mobile Hacks vs PUBG PC Cheats</image:caption>
     </image:image>
@@ -298,7 +278,7 @@
       <image:caption>PUBG Mod Menu, HWID Spoofer &amp; Feature Map</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-cover.webp</image:loc>
+      <image:loc>https://pubghack.net/media/pubg-hero-poster.jpg</image:loc>
       <image:title>PUBG Mod Menu, HWID Spoofer &amp; Feature Map Artwork</image:title>
       <image:caption>PUBG Mod Menu, HWID Spoofer &amp; Feature Map</image:caption>
     </image:image>
@@ -316,7 +296,7 @@
       <image:caption>PUBG Radar Hack Overlay Guide</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-menu.gif</image:loc>
+      <image:loc>https://pubghack.net/media/pubg-hero-poster.jpg</image:loc>
       <image:title>PUBG Radar Hack Overlay Guide Artwork</image:title>
       <image:caption>PUBG Radar Hack Overlay Guide</image:caption>
     </image:image>
@@ -334,7 +314,7 @@
       <image:caption>Safer PUBG Cheat Settings for Loot Runs</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-box.jpg</image:loc>
+      <image:loc>https://pubghack.net/media/pubg-hero-poster.jpg</image:loc>
       <image:title>Safer PUBG Cheat Settings for Loot Runs Artwork</image:title>
       <image:caption>Safer PUBG Cheat Settings for Loot Runs</image:caption>
     </image:image>
@@ -370,7 +350,7 @@
       <image:caption>Undetected PUBG Hacks 2026 ? Status, Aimbot &amp; ESP</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-cover.webp</image:loc>
+      <image:loc>https://pubghack.net/media/pubg-hero-poster.jpg</image:loc>
       <image:title>Undetected PUBG Hacks 2026 ? Status, Aimbot &amp; ESP Artwork</image:title>
       <image:caption>Undetected PUBG Hacks 2026 ? Status, Aimbot &amp; ESP</image:caption>
     </image:image>
@@ -388,7 +368,7 @@
       <image:caption>BattlEye Status Checklist Before You Buy or Load</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-cover.webp</image:loc>
+      <image:loc>https://pubghack.net/media/pubg-hero-poster.jpg</image:loc>
       <image:title>BattlEye Status Checklist Before You Buy or Load Artwork</image:title>
       <image:caption>BattlEye Status Checklist Before You Buy or Load</image:caption>
     </image:image>
@@ -406,7 +386,7 @@
       <image:caption>PUBG Hacks on Windows 10 and 11</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://pubghack.net/media/dayz-hero-full.webp</image:loc>
+      <image:loc>https://pubghack.net/media/pubg-hero-poster.jpg</image:loc>
       <image:title>PUBG Hacks on Windows 10 and 11 Artwork</image:title>
       <image:caption>PUBG Hacks on Windows 10 and 11</image:caption>
     </image:image>

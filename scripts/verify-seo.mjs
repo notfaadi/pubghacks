@@ -139,6 +139,15 @@ if (support.includes('noindex')) fail('Support page must be indexable')
 if (!forums.includes('"@type":"BreadcrumbList"')) {
   fail('/forums must expose BreadcrumbList schema')
 }
+for (const [name, html] of [
+  ['forums', forums],
+  ['product', product],
+  ['home', home],
+]) {
+  if (/dayz-hero-full|dayz-cover|dayz-box|DAYZ REAPER/i.test(html)) {
+    fail(`${name}: must not reference DayZ hero or product artwork in HTML`)
+  }
+}
 function decodeEntities(value = '') {
   return value
     .replaceAll('&amp;', '&')
@@ -195,7 +204,6 @@ for (const file of files) {
   }
 }
 const hasFirstPartyMedia = (html) =>
-  html.includes('/media/dayz-') ||
   html.includes('/media/pubg-hero-poster') ||
   html.includes('/videos/pubg-hero-live.mp4')
 for (const [name, html] of [
@@ -265,11 +273,7 @@ const requiredImages = [
   '/og/reviews.jpg',
   '/og/faq.jpg',
   '/og/support.jpg',
-  '/media/dayz-hero-full.webp',
-  '/media/dayz-cover.webp',
-  '/media/dayz-esp-gameplay.gif',
-  '/media/dayz-menu.gif',
-  '/media/dayz-video-thumb.jpg',
+  '/media/pubg-hero-poster.jpg',
 ]
 
 for (const url of expectedUrls) {
@@ -347,12 +351,6 @@ for (const asset of [
   'public/og/faq.jpg',
   'public/og/support.jpg',
   'public/media/pubg-hero-poster.jpg',
-  'public/media/dayz-hero-full.webp',
-  'public/media/dayz-cover.webp',
-  'public/media/dayz-box.jpg',
-  'public/media/dayz-esp-gameplay.gif',
-  'public/media/dayz-menu.gif',
-  'public/media/dayz-video-thumb.jpg',
   'public/videos/pubg-hero-live.mp4',
   'public/sitemap.css',
   'public/_routes.json',

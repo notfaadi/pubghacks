@@ -1,4 +1,4 @@
-import { PUBG_HERO } from '../data/media'
+import { PUBG_HERO_POSTER } from '../data/media'
 
 type VideoBgProps = {
   /** Full-bleed PUBG hero image (defaults to product artwork). */
@@ -8,7 +8,7 @@ type VideoBgProps = {
 
 /** Full-bleed static PUBG hero — no legacy video background. */
 export function VideoBg({
-  image = PUBG_HERO,
+  image = PUBG_HERO_POSTER,
   imageAlt = 'PUBG hacks Aimbot and ESP product artwork',
 }: VideoBgProps) {
   return (

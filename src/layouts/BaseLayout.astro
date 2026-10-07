@@ -44,6 +44,7 @@ const robots =
   'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
 const jsonLd = buildPageJsonLd(seo, jsonLdExtra)
 const isHome = seo.path === '/' || seo.path === ''
+const isForumsHero = seo.path === '/forums'
 /** Preload OG only when it supports LCP (hero/product/forums) — not text pages */
 const preloadOg =
   !noShareImage &&
@@ -66,7 +67,7 @@ const preloadOg =
     {preloadOg ? (
       <link rel="preload" as="image" href={imageUrl} type={imageType} fetchpriority="high" />
     ) : null}
-    {isHome ? (
+    {isHome || isForumsHero ? (
       <>
         <link
           rel="preload"
