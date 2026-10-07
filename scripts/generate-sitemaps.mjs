@@ -61,6 +61,10 @@ const FORUM_IMAGES = {
   'windows-setup': HERO_FULL,
   'raid-play-guide': BOX,
   'loader-errors': TACTICAL_ART,
+  'undetected-pubg-hacks-2026': COVER,
+  'pubg-steam-epic-hacks': HERO_FULL,
+  'pubg-mobile-hacks-keywords': MENU,
+  'pubg-mod-menu-spoofer': COVER,
 }
 
 const PAGE_META = {
@@ -108,14 +112,14 @@ function loadGames() {
 function loadForums() {
   const src = readFileSync(join(dataDir, 'blogs.ts'), 'utf8')
   const pattern =
-    /slug:\s*['"]([^'"]+)['"],\s*title:\s*['"]([^'"]+)['"],\s*excerpt:\s*['"]([^'"]+)['"],\s*metaTitle:\s*['"]([^'"]+)['"],\s*metaDescription:\s*['"]([^'"]+)['"],[\s\S]*?date:\s*['"](\d{4}-\d{2}-\d{2})['"]/g
+    /slug:\s*['"]([^'"]+)['"][\s\S]*?title:\s*['"]([^'"]+)['"][\s\S]*?date:\s*['"](\d{4}-\d{2}-\d{2})['"]/g
   return [...src.matchAll(pattern)].map((match) => ({
     slug: match[1],
     title: match[2],
-    excerpt: match[3],
-    metaTitle: match[4],
-    metaDescription: match[5],
-    date: match[6],
+    excerpt: match[2],
+    metaTitle: match[2],
+    metaDescription: match[2],
+    date: match[3],
   }))
 }
 
@@ -199,7 +203,7 @@ function imagesForPath(path, games, forums) {
     ]
   }
 
-  const game = games.find((g) => path === `/${g.slug}-cheats`)
+  const game = games.find((g) => path === `/${g.slug}-hacks`)
   if (game) {
     return [
       {
@@ -347,7 +351,7 @@ function videosForPath(path) {
 function collectAllPaths(games, forums, staticRoutes) {
   const paths = new Set([
     ...staticRoutes,
-    ...games.map((game) => `/${game.slug}-cheats`),
+    ...games.map((game) => `/${game.slug}-hacks`),
     ...forums.map((forum) => `/forums/${forum.slug}`),
   ])
   // Never index error page
@@ -361,7 +365,7 @@ function buildSitemap(games, forums, allPaths) {
   const sorted = [...allPaths].sort((a, b) => {
     const rank = (path) => {
       if (path === '/') return 0
-      if (path.endsWith('-cheats')) return 1
+      if (path.endsWith('-hacks')) return 1
       if (path === '/forums') return 2
       if (path.startsWith('/forums/')) return 3
       if (path === '/reviews') return 4
