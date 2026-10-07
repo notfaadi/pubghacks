@@ -2,7 +2,7 @@ import { Navbar } from './Navbar'
 import { CheckoutLink } from './CheckoutLink'
 import { HeroLiveWallpaper } from './HeroLiveWallpaper'
 import { guidePath } from '../data/games'
-import { PRODUCT_PRICE_USD } from '../data/site'
+import { HOME_HEADINGS, PRODUCT_PRICE_USD } from '../data/site'
 
 export function HeroBanner() {
   return (
@@ -17,11 +17,12 @@ export function HeroBanner() {
 
         <div className="page-x flex flex-1 flex-col justify-center py-10 sm:py-14">
           <div className="max-w-2xl">
-            <h1 className="text-4xl font-bold uppercase tracking-tight text-white sm:text-5xl lg:text-6xl">
-              PUBG Hacks
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-[3.25rem]">
+              {HOME_HEADINGS.h1}
             </h1>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-white/85 sm:text-lg">
-              Aimbot, wallhack ESP, and 2D radar for PUBG — BattlEye updates included.
+              Undetected aimbot, wallhack ESP, and 2D radar for PUBG PC — live BattlEye
+              status on Steam and Epic.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">

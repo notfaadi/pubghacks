@@ -4,6 +4,6 @@ import { HomePage } from '../views/HomePage'
 import { SEO } from '../data/site'
 ---
 
-<BaseLayout seo={SEO.home} noShareImage jsonLdExtra={[]}>
-  <HomePage client:idle />
+<BaseLayout seo={SEO.home} jsonLdExtra={[]}>
+  <HomePage client:load />
 </BaseLayout>

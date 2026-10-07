@@ -7,7 +7,7 @@ export const SITE_NAME = 'PUBG Hacks'
 export const SITE_HOST = 'pubghack.net'
 
 /** Bumps social crawlers when Open Graph JPEGs change (WhatsApp, Slack, iMessage). */
-export const OG_SHARE_VERSION = '20260307b'
+export const OG_SHARE_VERSION = '20260307c'
 
 /**
  * Sole purpose — used in schema + about copy.
@@ -45,19 +45,19 @@ const INDEX_ROBOTS =
 
 export const SEO = {
   home: {
-    title: 'Undetected PUBG Hacks & Cheats 2026 | Aimbot, ESP, Wallhack Download',
+    title: 'PUBG Hacks & Cheats 2026 | Undetected Aimbot, ESP & Radar',
     description:
-      'Get undetected PUBG hacks for PC: PUBG aimbot, PUBG ESP, wallhack, radar hack, loot ESP, recoil control and mod menu features. Private Battlegrounds hacks with HWID spoofer support. Works on Steam & Epic — download via pubghack.net.',
+      'Undetected PUBG hacks for PC — aimbot, ESP, wallhack, loot ESP and radar hack. Live BattlEye status for Steam and Epic. Download from $35 at pubghack.net.',
     path: '/',
     ogType: 'website',
     image: PAGE_OG.home,
-    imageAlt: 'Undetected PUBG hacks — aimbot, ESP, wallhack and radar for PC',
+    imageAlt: 'PUBG PC hero art for undetected aimbot, ESP, wallhack and radar hacks',
     robots: INDEX_ROBOTS,
   },
   forums: {
-    title: 'PUBG Hacks Guides | Aimbot, ESP, Wallhack, Radar & Install',
+    title: 'PUBG Hacks Guides | Setup, Aimbot, ESP & BattlEye',
     description:
-      'PUBG cheats setup guides: how to install PUBG hacks, macro settings, anti-cheat status, player ESP, loot ESP, radar cheat tutorials and mod menu hotkeys for PlayerUnknown\'s Battlegrounds PC.',
+      'PUBG hack guides for PC: loader setup, aimbot, ESP, radar, antivirus exclusions and BattlEye status on pubghack.net.',
     path: '/forums',
     ogType: 'website',
     image: PAGE_OG.forums,
@@ -65,9 +65,9 @@ export const SEO = {
     robots: INDEX_ROBOTS,
   },
   reviews: {
-    title: 'Best PUBG Cheats Reviews | Undetected Aimbot & ESP Feedback',
+    title: 'PUBG Hacks Reviews | Aimbot, ESP & Radar Feedback',
     description:
-      'Read reviews for undetected PUBG hacks and PUBG cheats — aimbot, player ESP, radar hack PC, recoil scripts and BattlEye rebuild honesty before you buy Battlegrounds hacks.',
+      'Real buyer reviews of PUBG cheats — aimbot, ESP, wallhack and radar hack performance, loader support and honest BattlEye rebuild notes before you checkout.',
     path: '/reviews',
     ogType: 'website',
     image: PAGE_OG.reviews,
@@ -75,9 +75,9 @@ export const SEO = {
     robots: INDEX_ROBOTS,
   },
   faq: {
-    title: 'Safe PUBG Cheats FAQ 2026 | Undetected Aimbot, Radar & Wallhack',
+    title: 'PUBG Hacks FAQ | Safety, Aimbot, ESP & BattlEye Status',
     description:
-      'FAQ on undetected PUBG hacks, ban risk, free PUBG aimbot myths, PUBG mobile vs PC, Steam/Epic support, HWID spoofer, speed hack, no recoil macro and anti-cheat bypass questions answered.',
+      'Answers on undetected PUBG hacks, ban risk, Steam and Epic support, HWID spoofer, aimbot and ESP settings, plus what Updating status means after BattlEye patches.',
     path: '/faq',
     ogType: 'website',
     image: PAGE_OG.faq,
@@ -85,9 +85,9 @@ export const SEO = {
     robots: INDEX_ROBOTS,
   },
   support: {
-    title: 'PUBG Hacks Support | Loader, Download & Mod Menu Help',
+    title: 'PUBG Hacks Support | Loader & Download Help',
     description:
-      'Support for PUBG hack download, loader errors, mod menu setup, game enhancement tools and delivery — 24/7 help for pubghack.net buyers on Windows PC.',
+      'Get help with PUBG hack delivery, loader errors, Windows setup and mod menu issues. Contact pubghack.net support with your order ID for fast troubleshooting.',
     path: '/support',
     ogType: 'website',
     image: PAGE_OG.support,
@@ -95,9 +95,9 @@ export const SEO = {
     robots: INDEX_ROBOTS,
   },
   product: {
-    title: '#1 PUBG Hacks Download | Private Aimbot & ESP Cheats [Undetected]',
+    title: 'PUBG Hacks Download | Aimbot, ESP, Wallhack & Radar',
     description:
-      'Download private PUBG cheats: undetected aimbot, PUBG wallhack, player ESP, loot ESP, PUBG radar hack PC, recoil control script and optional HWID spoofer. Steam & Epic Games compatible from $35.',
+      'PUBG cheats for PC: undetected aimbot, wallhack, player and loot ESP, radar hack and mod menu. Check live BattlEye status. Steam and Epic compatible from $35.',
     path: '/pubg-hacks',
     ogType: 'product',
     image: PAGE_OG.product,
@@ -107,7 +107,7 @@ export const SEO = {
 } as const satisfies Record<string, PageSeo>
 
 export const HOME_HEADINGS = {
-  h1: 'Premium PUBG Hacks & Cheats — Undetected & Updated Daily',
+  h1: 'PUBG Hacks & Cheats 2026',
   h2Features: 'PUBG aimbot, PUBG ESP, wallhack & radar hack PC',
   h2Featured: 'PUBG cheats & Battlegrounds hacks features',
   h2About: 'Best undetected PUBG hacks — clear status before download',

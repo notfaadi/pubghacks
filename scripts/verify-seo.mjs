@@ -37,6 +37,12 @@ for (const file of files) {
   const canonicalUrl = pageUrl(file)
 
   if (h1Count !== 1) fail(`${page}: expected one H1, found ${h1Count}`)
+  if (description && description.length > 165) {
+    fail(`${page}: meta description too long (${description.length} chars)`)
+  }
+  if (title && title.length > 70) {
+    fail(`${page}: title too long (${title.length} chars)`)
+  }
   if (!title) fail(`${page}: missing title`)
   else if (titles.has(title)) fail(`${page}: duplicate title also used by ${titles.get(title)}`)
   else titles.set(title, page)
@@ -81,10 +87,26 @@ const faq = readFileSync(join(dist, 'faq', 'index.html'), 'utf8')
 const support = readFileSync(join(dist, 'support', 'index.html'), 'utf8')
 const forums = readFileSync(join(dist, 'forums', 'index.html'), 'utf8')
 
-if (
-  !home.includes('<title>Undetected PUBG Hacks &amp; Cheats 2026 | Aimbot, ESP, Wallhack Download</title>')
-) {
-  fail('Homepage does not own the exact transactional title')
+const HOME_TITLE = 'PUBG Hacks & Cheats 2026 | Undetected Aimbot, ESP & Radar'
+const HOME_TITLE_HTML = HOME_TITLE.replaceAll('&', '&amp;')
+if (!home.includes(`<title>${HOME_TITLE_HTML}</title>`)) {
+  fail('Homepage title must match SEO.home (H1-aligned transactional title)')
+}
+if (!home.includes('PUBG Hacks') || !home.includes('Cheats 2026')) {
+  fail('Homepage must expose H1 text aligned with the page title')
+}
+if (!home.includes('PUBG PC gameplay wallpaper background')) {
+  fail('Homepage hero image must include a descriptive alt attribute')
+}
+const homeDesc = home.match(/<meta name="description" content="([^"]+)"/)?.[1]
+if (homeDesc && homeDesc.length > 165) {
+  fail(`Homepage meta description too long (${homeDesc.length} chars; max 165)`)
+}
+if (homeDesc && homeDesc.length < 110) {
+  fail(`Homepage meta description too short (${homeDesc.length} chars)`)
+}
+if (HOME_TITLE.length > 60) {
+  fail(`Homepage title too long (${HOME_TITLE.length} chars; target ≤60)`)
 }
 if (product.includes('<title>Buy PUBG Hacks')) fail('Product details page competes with homepage')
 if ((faq.match(/"@type":"FAQPage"/g) || []).length !== 1) fail('/faq must own one FAQPage')

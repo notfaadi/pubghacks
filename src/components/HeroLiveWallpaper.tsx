@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { PUBG_HOME_VIDEO } from '../data/media'
 
+const HERO_POSTER_ALT =
+  'PUBG PC gameplay wallpaper background on the PUBG Hacks homepage hero section'
+
 /** Full-viewport PUBG live wallpaper — muted loop MP4, edge-to-edge cover. */
 export function HeroLiveWallpaper() {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -23,10 +26,11 @@ export function HeroLiveWallpaper() {
   }, [])
 
   return (
-    <div className="hero-live-wallpaper pointer-events-none absolute inset-0 z-0 overflow-hidden" aria-hidden>
+    <div className="hero-live-wallpaper pointer-events-none absolute inset-0 z-0 overflow-hidden">
       <img
         src={PUBG_HOME_VIDEO.poster}
-        alt=""
+        alt={HERO_POSTER_ALT}
+        title={HERO_POSTER_ALT}
         width={1920}
         height={1080}
         decoding="async"
@@ -45,7 +49,7 @@ export function HeroLiveWallpaper() {
         loop
         playsInline
         preload="auto"
-        aria-hidden
+        aria-label="Looping PUBG PC gameplay video background for the homepage hero"
       >
         <source src={PUBG_HOME_VIDEO.src} type="video/mp4" />
       </video>
