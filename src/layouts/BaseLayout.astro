@@ -2,6 +2,7 @@
 import '../styles/global.css'
 import {
   OG_IMAGE,
+  OG_SHARE_VERSION,
   SITE_NAME,
   absoluteUrl,
   type PageSeo,
@@ -18,7 +19,11 @@ type Props = {
 const { seo, jsonLdExtra = [], bodyClass = 'bg-z-bg text-z-ink' } = Astro.props
 const url = absoluteUrl(seo.path)
 const image = seo.image || OG_IMAGE
-const imageUrl = image.startsWith('http') ? image : absoluteUrl(image)
+const imageBase = image.startsWith('http') ? image : absoluteUrl(image)
+const imageUrl =
+  !image.startsWith('http') && image.includes('/og/')
+    ? `${imageBase}?v=${OG_SHARE_VERSION}`
+    : imageBase
 const imageAlt = seo.imageAlt || seo.title
 /** Google SERP thumbnails prefer crawlable JPEG 1200x630 */
 const isOgJpeg = image.includes('/og/') && image.endsWith('.jpg')

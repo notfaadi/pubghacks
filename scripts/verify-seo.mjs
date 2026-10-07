@@ -139,7 +139,8 @@ for (const file of files) {
   const twImage = html.match(/<meta name="twitter:image" content="([^"]+)"/)?.[1]
   const robotsMeta = html.match(/<meta name="robots" content="([^"]+)"/)?.[1]
 
-  if (!ogImage?.startsWith('https://pubghack.net/og/') || !ogImage.endsWith('.jpg')) {
+  const ogImagePath = ogImage?.split('?')[0]
+  if (!ogImagePath?.startsWith('https://pubghack.net/og/') || !ogImagePath.endsWith('.jpg')) {
     fail(`${page}: og:image must be https://pubghack.net/og/*.jpg for SERP thumbnails`)
   }
   if (!twImage || twImage !== ogImage) {

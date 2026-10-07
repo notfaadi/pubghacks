@@ -33,7 +33,10 @@ async function exists(path) {
   }
 }
 
+const pubgHeroPoster = join(mediaDir, 'pubg-hero-poster.jpg')
+
 const requiredBattlelog = [
+  pubgHeroPoster,
   join(mediaDir, 'dayz-hero-full.webp'),
   join(mediaDir, 'dayz-cover.webp'),
   join(mediaDir, 'dayz-box.jpg'),
@@ -114,63 +117,63 @@ const videoThumb = join(mediaDir, 'dayz-video-thumb.jpg')
 const staticOg = [
   {
     file: 'home.jpg',
-    source: heroFull,
-    eyebrow: 'DAYZ CHEATS',
+    source: pubgHeroPoster,
+    eyebrow: 'PUBG HACKS',
     title: 'PUBG Aimbot, ESP & Radar Hack',
-    subtitle: 'PUBG hacks from $35 · live BattlEye status',
+    subtitle: 'PUBG PC cheats from $35 · live BattlEye status',
   },
   {
     file: 'pubg-hacks.jpg',
-    source: coverArt,
-    eyebrow: 'PRODUCT DETAILS',
+    source: pubgHeroPoster,
+    eyebrow: 'PUBG HACKS',
     title: 'PUBG Aimbot, ESP & Radar',
     subtitle: 'Features, BattlEye status and price',
   },
   {
     file: 'forums.jpg',
-    source: menuGif,
+    source: pubgHeroPoster,
     eyebrow: 'GUIDES',
     title: 'PUBG Hacks Setup Forums',
     subtitle: 'Aimbot, ESP, loader and BattlEye guides',
   },
   {
     file: 'reviews.jpg',
-    source: espGif,
+    source: pubgHeroPoster,
     eyebrow: 'REVIEWS',
     title: 'PUBG Hacks Buyer Reviews',
     subtitle: 'Real PUBG Aimbot and ESP feedback',
   },
   {
     file: 'faq.jpg',
-    source: menuGif,
+    source: pubgHeroPoster,
     eyebrow: 'FAQ',
     title: 'PUBG Hacks FAQ',
     subtitle: 'Price, BattlEye status and setup answers',
   },
   {
     file: 'support.jpg',
-    source: videoThumb,
+    source: pubgHeroPoster,
     eyebrow: 'SUPPORT',
     title: 'PUBG Hacks Support',
     subtitle: 'Loader, delivery and Windows help',
   },
   {
     file: 'privacy.jpg',
-    source: heroFull,
+    source: pubgHeroPoster,
     eyebrow: 'POLICY',
     title: 'Privacy Policy',
     subtitle: 'How pubghack.net handles order data',
   },
   {
     file: 'terms.jpg',
-    source: heroFull,
+    source: pubgHeroPoster,
     eyebrow: 'POLICY',
     title: 'Terms of Use',
     subtitle: 'License rules for PUBG Hacks',
   },
   {
     file: 'refunds.jpg',
-    source: coverArt,
+    source: pubgHeroPoster,
     eyebrow: 'POLICY',
     title: 'Refund Policy',
     subtitle: 'Digital license refund rules',
@@ -203,14 +206,14 @@ for (const forum of forums) {
   const out = join(ogDir, file)
   const source =
     /esp|wallhack|radar|raid/i.test(forum.slug)
-      ? espGif
+      ? pubgHeroPoster
       : /aimbot|features|hotkeys|setup|windows|antivirus|loader|stream/i.test(forum.slug)
-        ? menuGif
-        : coverArt
+        ? pubgHeroPoster
+        : pubgHeroPoster
   await writeOgJpeg(
     out,
     source,
-    'DAYZ GUIDE',
+    'PUBG GUIDE',
     forum.title.replace(/\s*\|\s*.*$/, '').slice(0, 48),
     'PUBG hacks · pubghack.net',
   )
@@ -236,8 +239,8 @@ function fillerSvg(width, height, eyebrow, title, subtitle) {
 }
 
 for (const [name, eyebrow, title, subtitle] of [
-  ['dayz-tactical-art.jpg', 'DAYZ STANDALONE', 'PUBG Hacks', 'Aimbot · ESP · Loot ESP · BattlEye'],
-  ['dayz-control-art.jpg', 'DAYZ · WINDOWS PC', 'PUBG ESP & Radar', 'Built for PUBG ranked runs'],
+  ['dayz-tactical-art.jpg', 'PUBG PC', 'PUBG Hacks', 'Aimbot · ESP · Loot ESP · BattlEye'],
+  ['dayz-control-art.jpg', 'PUBG · WINDOWS PC', 'PUBG ESP & Radar', 'Built for PUBG ranked runs'],
   ['dayz-home-art.jpg', 'pubghack.net', 'PUBG Hacks', 'Aimbot, ESP, wallhack and radar hack'],
 ]) {
   const path = join(mediaDir, name)
