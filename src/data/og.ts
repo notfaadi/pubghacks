@@ -3,7 +3,8 @@
  * Every indexed URL maps to a unique crawlable /og/*.jpg under pubghack.net.
  */
 
-export const OG_HOME = '/og/pubg-hacks-share.jpg'
+/** Social / Discord link preview (PUBG hero only — never DayZ assets). */
+export const OG_HOME = '/og/pubg-hacks-social.jpg'
 export const OG_PRODUCT = '/og/pubg-hacks.jpg'
 export const OG_FORUMS = '/og/forums.jpg'
 export const OG_REVIEWS = '/og/reviews.jpg'

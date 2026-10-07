@@ -127,7 +127,7 @@ export function productCoreJsonLd() {
     description: SITE_PURPOSE,
     url: `${SITE_URL}/pubg-hacks`,
     image: [
-      absoluteAsset('/og/pubg-hacks-share.jpg'),
+      absoluteAsset('/og/pubg-hacks-social.jpg'),
       absoluteAsset('/og/pubg-hacks.jpg'),
       absoluteAsset(PUBG_HERO_POSTER),
     ],

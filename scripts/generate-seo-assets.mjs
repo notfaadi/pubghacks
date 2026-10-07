@@ -116,11 +116,11 @@ const videoThumb = join(mediaDir, 'dayz-video-thumb.jpg')
 
 const staticOg = [
   {
-    file: 'pubg-hacks-share.jpg',
+    file: 'pubg-hacks-social.jpg',
     source: pubgHeroPoster,
     eyebrow: 'PUBG HACKS',
-    title: 'PUBG Aimbot, ESP & Radar Hack',
-    subtitle: 'PUBG PC cheats from $35 · live BattlEye status',
+    title: 'PUBG Hacks & Cheats 2026',
+    subtitle: 'Aimbot, ESP, wallhack & radar · from $35',
   },
   {
     file: 'home.jpg',

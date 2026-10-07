@@ -60,6 +60,13 @@ export default {
       return Response.redirect(apex.toString(), 301)
     }
 
+    // Retired DayZ-era share JPEG — force crawlers to the PUBG banner.
+    if (url.pathname === '/og/pubg-hacks-share.jpg') {
+      const next = new URL('https://pubghack.net/og/pubg-hacks-social.jpg')
+      next.search = url.search || '?v=20261007a'
+      return Response.redirect(next.toString(), 301)
+    }
+
     const assetResponse = await assetsFetch(env, request, url.pathname + url.search)
     const response = withHtmlCharset(assetResponse)
 
