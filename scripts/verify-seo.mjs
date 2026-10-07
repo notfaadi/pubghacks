@@ -303,6 +303,7 @@ for (const asset of [
   'public/og/reviews.jpg',
   'public/og/faq.jpg',
   'public/og/support.jpg',
+  'public/media/pubg-hero-poster.jpg',
   'public/media/dayz-hero-full.webp',
   'public/media/dayz-cover.webp',
   'public/media/dayz-box.jpg',

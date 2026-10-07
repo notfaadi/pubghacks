@@ -9,6 +9,7 @@ export type SeoMediaItem = {
 }
 
 /** PUBG product art + menu stills (self-hosted). */
+export const PUBG_HERO_POSTER = '/media/pubg-hero-poster.jpg'
 export const PUBG_HERO = '/media/dayz-hero-full.webp'
 export const PUBG_SOLDIER = '/media/dayz-hero-full.webp'
 export const PUBG_COVER = '/media/dayz-cover.webp'
@@ -24,7 +25,7 @@ export const PUBG_VIDEO_THUMB = '/media/dayz-video-thumb.jpg'
 /** Self-hosted PUBG live wallpaper (hero + product preview). */
 export const PUBG_HOME_VIDEO = {
   src: '/videos/pubg-hero-live.mp4',
-  poster: PUBG_HERO,
+  poster: PUBG_HERO_POSTER,
   title: 'PUBG Hacks — live PUBG wallpaper preview',
   caption: 'PUBG PC gameplay background for PUBG Aimbot, ESP, wallhack and radar hack overview.',
 } as const

@@ -542,11 +542,17 @@ a:hover .game-cover-img:not(.game-cover-img--color) {
 }
 
 /* ——— Full-screen PUBG live wallpaper hero ——— */
+.hero-live-wallpaper {
+  background: #08060f;
+}
+
 .hero-banner--live {
   min-height: 100svh;
   min-height: 100dvh;
+  background: #08060f;
 }
 
+.hero-live-wallpaper__poster,
 .hero-live-wallpaper__video {
   z-index: 0;
   min-width: 100%;
@@ -555,6 +561,9 @@ a:hover .game-cover-img:not(.game-cover-img--color) {
   object-position: center center;
   filter: saturate(1.12) contrast(1.12) brightness(0.98);
   backface-visibility: hidden;
+}
+
+.hero-live-wallpaper__video {
   animation: hero-live-drift 28s ease-in-out infinite alternate;
 }
 
