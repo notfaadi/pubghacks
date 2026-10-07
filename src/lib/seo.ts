@@ -94,7 +94,8 @@ export function webPageNode(seo: PageSeo) {
     inLanguage: 'en',
   } as Record<string, unknown>
   const hasVisibleImage =
-    ['/', '/pubg-hacks', '/forums'].includes(seo.path) || seo.path.startsWith('/forums/')
+    seo.path !== '/' &&
+    (['/pubg-hacks', '/forums'].includes(seo.path) || seo.path.startsWith('/forums/'))
   // Text pages (faq/support/reviews) still expose OG as WebPage.image for social crawlers
   const hasOgImage = Boolean(seo.image)
   if (hasVisibleImage || hasOgImage) {
@@ -139,7 +140,7 @@ export function productCoreJsonLd() {
       name: 'PUBG Hacks Aimbot and ESP preview',
       description:
         'Preview of PUBG Aimbot, ESP menu, loot highlighting and radar hack features on PC.',
-      thumbnailUrl: absoluteAsset('/media/dayz-video-thumb.jpg'),
+      thumbnailUrl: absoluteAsset(PUBG_HERO_POSTER),
       contentUrl: absoluteAsset('/videos/pubg-hero-live.mp4'),
       uploadDate: '2026-09-16',
       inLanguage: 'en',

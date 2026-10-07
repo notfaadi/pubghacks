@@ -97,13 +97,15 @@ for (const [name, html] of [
   if (html.includes('"@type":"FAQPage"')) fail(`${name}: duplicate FAQPage schema`)
 }
 for (const [name, html] of [
-  ['home', home],
   ['product', product],
   ['reviews', reviews],
 ]) {
   if (!html.includes('"@id":"https://pubghack.net/#product"')) {
     fail(`${name}: missing shared Product ID`)
   }
+}
+if (home.includes('"@type":"Product"')) {
+  fail('Homepage must not embed Product schema (chat preview uses it for images)')
 }
 if ((reviews.match(/"@type":"Review"/g) || []).length !== 12) {
   fail('Reviews schema must contain exactly 12 visible buyer reviews')
@@ -139,34 +141,47 @@ for (const file of files) {
   const twImage = html.match(/<meta name="twitter:image" content="([^"]+)"/)?.[1]
   const robotsMeta = html.match(/<meta name="robots" content="([^"]+)"/)?.[1]
 
-  const ogImagePath = ogImage?.split('?')[0]
-  if (!ogImagePath?.startsWith('https://pubghack.net/og/') || !ogImagePath.endsWith('.jpg')) {
-    fail(`${page}: og:image must be https://pubghack.net/og/*.jpg for SERP thumbnails`)
-  }
-  if (!twImage || twImage !== ogImage) {
-    fail(`${page}: twitter:image must match og:image`)
+  const homeNoShare =
+    page === 'index.html' &&
+    html.includes('name="twitter:card" content="summary"') &&
+    !html.includes('property="og:image"')
+
+  if (!homeNoShare) {
+    const ogImagePath = ogImage?.split('?')[0]
+    if (!ogImagePath?.startsWith('https://pubghack.net/og/') || !ogImagePath.endsWith('.jpg')) {
+      fail(`${page}: og:image must be https://pubghack.net/og/*.jpg for SERP thumbnails`)
+    }
+    if (!twImage || twImage !== ogImage) {
+      fail(`${page}: twitter:image must match og:image`)
+    }
   }
   if (ogTitle !== title) fail(`${page}: og:title must match <title>`)
   if (ogDesc !== description) fail(`${page}: og:description must match meta description`)
-  if (!html.includes('property="og:image:width" content="1200"')) {
-    fail(`${page}: og:image:width must be 1200`)
-  }
-  if (!html.includes('property="og:image:height" content="630"')) {
-    fail(`${page}: og:image:height must be 630`)
+  if (!homeNoShare) {
+    if (!html.includes('property="og:image:width" content="1200"')) {
+      fail(`${page}: og:image:width must be 1200`)
+    }
+    if (!html.includes('property="og:image:height" content="630"')) {
+      fail(`${page}: og:image:height must be 630`)
+    }
   }
   if (!robotsMeta?.includes('max-image-preview:large')) {
     fail(`${page}: robots must allow max-image-preview:large`)
   }
-  if (!html.includes('rel="image_src"')) {
+  if (!homeNoShare && !html.includes('rel="image_src"')) {
     fail(`${page}: missing link rel=image_src for thumbnail crawlers`)
   }
 }
+const hasFirstPartyMedia = (html) =>
+  html.includes('/media/dayz-') ||
+  html.includes('/media/pubg-hero-poster') ||
+  html.includes('/videos/pubg-hero-live.mp4')
 for (const [name, html] of [
   ['home', home],
   ['product', product],
   ['forums', forums],
 ]) {
-  if (!html.includes('/media/dayz-')) {
+  if (!hasFirstPartyMedia(html)) {
     fail(`${name}: missing visible PUBG media in page body`)
   }
 }
@@ -179,7 +194,10 @@ for (const [name, html, og] of [
     fail(`${name}: missing Open Graph image ${og}`)
   }
 }
-if (!product.includes('/videos/pubg-hero-live.mp4') || !product.includes('/media/dayz-video-thumb.jpg')) {
+if (
+  !product.includes('/videos/pubg-hero-live.mp4') &&
+  !product.includes('pubg-hero-live.mp4')
+) {
   fail('Product page is missing the self-hosted PUBG preview video')
 }
 if (home.includes('iframe.mediadelivery.net') || product.includes('iframe.mediadelivery.net')) {

@@ -14,9 +14,12 @@ type Props = {
   seo: PageSeo
   jsonLdExtra?: unknown[]
   bodyClass?: string
+  /** Homepage: no large link-preview banner (avoids stale chat caches). */
+  noShareImage?: boolean
 }
 
-const { seo, jsonLdExtra = [], bodyClass = 'bg-z-bg text-z-ink' } = Astro.props
+const { seo, jsonLdExtra = [], bodyClass = 'bg-z-bg text-z-ink', noShareImage = false } =
+  Astro.props
 const url = absoluteUrl(seo.path)
 const image = seo.image || OG_IMAGE
 const imageBase = image.startsWith('http') ? image : absoluteUrl(image)
@@ -43,10 +46,10 @@ const jsonLd = buildPageJsonLd(seo, jsonLdExtra)
 const isHome = seo.path === '/' || seo.path === ''
 /** Preload OG only when it supports LCP (hero/product/forums) — not text pages */
 const preloadOg =
-  isHome ||
-  seo.path === '/pubg-hacks' ||
-  seo.path === '/forums' ||
-  seo.path.startsWith('/forums/')
+  !noShareImage &&
+  (seo.path === '/pubg-hacks' ||
+    seo.path === '/forums' ||
+    seo.path.startsWith('/forums/'))
 ---
 
 <!doctype html>
@@ -88,8 +91,7 @@ const preloadOg =
     {/* Self-referential hreflang (en + x-default) — required by Seobility / Google */}
     <link rel="alternate" href={url} hreflang="en" />
     <link rel="alternate" href={url} hreflang="x-default" />
-    {/* Legacy crawlers still read image_src for result thumbnails */}
-    <link rel="image_src" href={imageUrl} />
+    {!noShareImage ? <link rel="image_src" href={imageUrl} /> : null}
 
     <meta property="og:type" content={seo.ogType || 'website'} />
     <meta property="og:site_name" content={SITE_NAME} />
@@ -97,19 +99,31 @@ const preloadOg =
     <meta property="og:url" content={url} />
     <meta property="og:title" content={seo.title} />
     <meta property="og:description" content={seo.description} />
-    <meta property="og:image" content={imageUrl} />
-    <meta property="og:image:url" content={imageUrl} />
-    <meta property="og:image:secure_url" content={imageUrl} />
-    <meta property="og:image:alt" content={imageAlt} />
-    <meta property="og:image:type" content={imageType} />
-    <meta property="og:image:width" content={String(imageWidth)} />
-    <meta property="og:image:height" content={String(imageHeight)} />
+    {
+      noShareImage ? null : (
+        <>
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:image:url" content={imageUrl} />
+          <meta property="og:image:secure_url" content={imageUrl} />
+          <meta property="og:image:alt" content={imageAlt} />
+          <meta property="og:image:type" content={imageType} />
+          <meta property="og:image:width" content={String(imageWidth)} />
+          <meta property="og:image:height" content={String(imageHeight)} />
+        </>
+      )
+    }
 
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content={noShareImage ? 'summary' : 'summary_large_image'} />
     <meta name="twitter:title" content={seo.title} />
     <meta name="twitter:description" content={seo.description} />
-    <meta name="twitter:image" content={imageUrl} />
-    <meta name="twitter:image:alt" content={imageAlt} />
+    {
+      noShareImage ? null : (
+        <>
+          <meta name="twitter:image" content={imageUrl} />
+          <meta name="twitter:image:alt" content={imageAlt} />
+        </>
+      )
+    }
 
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
